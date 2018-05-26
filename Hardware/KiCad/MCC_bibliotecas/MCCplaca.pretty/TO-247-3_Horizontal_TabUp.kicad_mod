@@ -1,4 +1,4 @@
-(module TO-247-3_Horizontal_TabUp (layer F.Cu) (tedit 5B061F23)
+(module TO-247-3_Horizontal_TabUp (layer F.Cu) (tedit 5B0906BA)
   (descr "TO-247-3, Horizontal, RM 5.45mm, see https://toshiba.semicon-storage.com/us/product/mosfet/to-247-4l.html")
   (tags "TO-247-3 Horizontal RM 5.45mm")
   (fp_text reference D1 (at 5.45 27.15) (layer F.SilkS)
@@ -34,12 +34,12 @@
   (pad 1 thru_hole rect (at 0 0) (size 2.5 4.5) (drill 1.5) (layers *.Cu *.Mask))
   (pad "" np_thru_hole oval (at 5.45 19.86) (size 3.6 3.6) (drill 3.6) (layers *.Cu *.Mask))
   (model ${KISYS3DMOD}/Package_TO_SOT_THT.3dshapes/TO-247-3_Horizontal_TabUp.wrl
-    (at (xyz 0 0 0))
+    (offset (xyz 27.30499958992004 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
   )
-  (model "${KIPRJMOD}/MCCplaca.pretty/3D/User Library-TO-247H.step"
-    (offset (xyz 5.562599916458129 -19.68499970436096 3.174999952316284))
+  (model "${KIPRJMOD}/MCC_bibliotecas/MCCplaca.pretty/3D/User Library-TO-247H.step"
+    (offset (xyz 5.333999919891357 -19.68499970436096 2.539999961853027))
     (scale (xyz 1 1 1))
     (rotate (xyz 90 0 0))
   )

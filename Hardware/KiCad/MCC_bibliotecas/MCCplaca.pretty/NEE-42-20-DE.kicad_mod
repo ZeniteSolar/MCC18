@@ -1,4 +1,4 @@
-(module Inductor_THT:NEE-42-20-DE (layer F.Cu) (tedit 5B0217B6)
+(module NEE-42-20-DE (layer F.Cu) (tedit 5B090896)
   (fp_text reference L1 (at 0 0.5) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
@@ -31,4 +31,9 @@
   (pad 1 thru_hole circle (at 6.985 36.068 90) (size 5 5) (drill 3) (layers *.Cu *.Mask))
   (pad 4 thru_hole circle (at 36.068 6.985 270) (size 5 5) (drill 3) (layers *.Cu *.Mask))
   (pad 2 thru_hole circle (at 6.985 6.985) (size 5 5) (drill 3) (layers *.Cu *.Mask))
+  (model "${KIPRJMOD}/MCC_bibliotecas/MCCplaca.pretty/3D/Triad Magnetics-TY-306P.step"
+    (offset (xyz 22.22499966621399 -20.95499968528748 17.77999973297119))
+    (scale (xyz 1 1.9 1.3))
+    (rotate (xyz -90 0 0))
+  )
 )

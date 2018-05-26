@@ -1,4 +1,4 @@
-(module Sensor_Current:LTSP_25-NP (layer F.Cu) (tedit 5B0224F3)
+(module LTSP_25-NP (layer F.Cu) (tedit 5B09099D)
   (fp_text reference U1 (at 0 -2.04) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
@@ -41,4 +41,9 @@
   (pad 1 thru_hole oval (at 9.398 -1.27) (size 1.9 2.54) (drill 1.3) (layers *.Cu *.Mask))
   (pad 3 thru_hole oval (at 14.478 -1.27) (size 1.9 2.54) (drill 1.3) (layers *.Cu *.Mask))
   (pad 2 thru_hole oval (at 11.938 -1.27) (size 1.9 2.54) (drill 1.3) (layers *.Cu *.Mask))
+  (model "${KIPRJMOD}/MCC_bibliotecas/MCCplaca.pretty/3D/LTSR 25_NP.stp"
+    (at (xyz 0 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz -90 0 0))
+  )
 )
