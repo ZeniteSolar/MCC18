@@ -31,7 +31,7 @@ U 1 1 5B021474
 P 6350 2700
 F 0 "Q1" H 6200 2800 50  0000 L CNN
 F 1 "IRFP4321PbF" H 5850 2900 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-247-3_Horizontal_TabUp" H 6600 2625 50  0001 L CIN
+F 2 "MCCplaca:TO-247-3_Horizontal_TabUp" H 6600 2625 50  0001 L CIN
 F 3 "https://www.infineon.com/dgdl/irfp4321pbf.pdf?fileId=5546d462533600a40153562c4f802011" H 6350 2700 50  0001 L CNN
 	1    6350 2700
 	-1   0    0    1   
@@ -737,7 +737,7 @@ U 1 1 5B2B235B
 P 4100 2650
 F 0 "D1" V 3950 2700 50  0000 L CNN
 F 1 "80CPQ150PbF" H 4000 2800 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-247-3_Horizontal_TabUp" H 4100 2650 50  0001 C CNN
+F 2 "MCCplaca:TO-247-3_Horizontal_TabUp" H 4100 2650 50  0001 C CNN
 F 3 "https://www.vishay.com/docs/94257/vs-80cpq150.pdf" H 4100 2650 50  0001 C CNN
 	1    4100 2650
 	0    -1   1    0   
