@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name Mcc18-rescue)(type Legacy)(uri ${KIPRJMOD}/Mcc18-rescue.lib)(options "")(descr ""))
+)
