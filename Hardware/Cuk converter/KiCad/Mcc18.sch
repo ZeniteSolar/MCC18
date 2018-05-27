@@ -1224,9 +1224,9 @@ Text Label 2375 5475 2    50   ~ 0
 BatOVInterrupt
 Text Label 2375 5775 2    47   ~ 0
 PWM
-Text Label 2350 6775 2    39   ~ 0
+Text Label 2321 6825 2    39   ~ 0
 Ipanel_adc+
-Text Label 2350 6825 2    39   ~ 0
+Text Label 2347 6775 2    39   ~ 0
 Vpanel_adc+
 Text Label 2350 6875 2    39   ~ 0
 Vbat_adc+
@@ -1412,4 +1412,8 @@ Wire Wire Line
 Connection ~ 1700 5325
 Wire Wire Line
 	1700 5325 1700 5375
+Text Notes 7130 5470 0    47   ~ 0
+Obseravaçoes para a placa definitiva\n
+Text Notes 7140 5540 0    39   ~ 0
+Adicionar um divisor de tensão na medida de tensão da batria e painel , para que seja mais seguro 
 $EndSCHEMATC
