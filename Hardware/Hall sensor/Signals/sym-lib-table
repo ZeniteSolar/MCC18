@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name Signal-rescue)(type Legacy)(uri ${KIPRJMOD}/Signal-rescue.lib)(options "")(descr ""))
+)
