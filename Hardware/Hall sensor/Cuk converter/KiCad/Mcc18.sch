@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:Mcc18-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -435,7 +434,7 @@ In this config (2 turns) \nit senses up to 12.5A
 Text Notes 950  3150 0    47   ~ 0
 CurrentSense\n
 $Comp
-L Mcc18-rescue:DRIVER_(INEP)-Driver_FET-Mcc18-rescue-Mcc18-rescue-Mcc18-rescue-Mcc18-rescue-Mcc18-rescue U2
+L MCC18:DRIVER_(INEP)-Driver_FET-Mcc18-rescue-Mcc18-rescue-Mcc18-rescue-Mcc18-rescue-Mcc18-rescue U2
 U 1 1 5B0E871D
 P 10500 3275
 F 0 "U2" H 10500 3400 47  0000 L CNN
@@ -619,7 +618,7 @@ $EndComp
 Wire Wire Line
 	2300 5225 2300 5175
 $Comp
-L Mcc18-rescue:Signals_MCC-MCC18 U4
+L MCC18:Signals_MCC-MCC18-Mcc18-rescue-Mcc18-rescue-Mcc18-rescue-Mcc18-rescue U4
 U 1 1 5B191CBF
 P 3150 4925
 F 0 "U4" H 2969 5040 50  0000 C CNN
@@ -1365,14 +1364,14 @@ Wire Wire Line
 Wire Wire Line
 	1700 6825 2350 6825
 $Comp
-L Mcc18-rescue:ZCS-ZCS-Mcc18-rescue U5
+L ZCS:ZCS U5
 U 1 1 5B16184F
-P 1250 4975
-F 0 "U5" H 1381 5140 50  0000 C CNN
-F 1 "ZCS" H 1381 5049 50  0000 C CNN
-F 2 "MCCplaca:ZCS18" H 1250 4975 50  0001 C CNN
-F 3 "" H 1250 4975 50  0001 C CNN
-	1    1250 4975
+P 1350 4975
+F 0 "U5" H 1481 5140 50  0000 C CNN
+F 1 "ZCS" H 1481 5049 50  0000 C CNN
+F 2 "MCCplaca:ZCS18" H 1350 4975 50  0001 C CNN
+F 3 "" H 1350 4975 50  0001 C CNN
+	1    1350 4975
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1402,16 +1401,8 @@ Wire Wire Line
 Wire Wire Line
 	2150 5025 1750 5025
 Connection ~ 1750 5025
-Wire Wire Line
-	1700 5175 1700 5125
 Connection ~ 1700 5125
-Wire Wire Line
-	1700 5125 1700 5075
-Wire Wire Line
-	1700 5275 1700 5325
 Connection ~ 1700 5325
-Wire Wire Line
-	1700 5325 1700 5375
 Text Notes 7130 5470 0    47   ~ 0
 Obseravaçoes para a placa definitiva\n
 Text Notes 7140 5540 0    39   ~ 0
