@@ -1,4 +1,4 @@
-update=22/05/2018 22:48:11
+update=Wed 30 May 2018 01:04:34 AM -03
 version=1
 last_client=kicad
 [general]
@@ -28,17 +28,17 @@ ModuleOutlineThickness=0.150000000000
 version=1
 LibDir=
 [eeschema/libraries]
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=
-SpiceAjustPassiveValues=0
-LabSize=25
-ERC_TestSimilarLabels=1
 [cvpcb]
 version=1
 [cvpcb/equfiles]
 EquName1=${KIPRJMOD}/MCCplaca.pretty/joj.equ
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=PDFS/
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=Pcbnew
+SpiceAjustPassiveValues=0
+LabSize=25
+ERC_TestSimilarLabels=1

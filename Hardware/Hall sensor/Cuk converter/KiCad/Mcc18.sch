@@ -631,12 +631,12 @@ $EndComp
 $Comp
 L power:GNDA #PWR0109
 U 1 1 5B1CE0FF
-P 3825 5475
-F 0 "#PWR0109" H 3825 5225 39  0001 C CNN
-F 1 "GNDA" V 3830 5347 50  0000 R CNN
-F 2 "" H 3825 5475 50  0001 C CNN
-F 3 "" H 3825 5475 50  0001 C CNN
-	1    3825 5475
+P 4125 5475
+F 0 "#PWR0109" H 4125 5225 39  0001 C CNN
+F 1 "GNDA" V 4130 5347 50  0000 R CNN
+F 2 "" H 4125 5475 50  0001 C CNN
+F 3 "" H 4125 5475 50  0001 C CNN
+	1    4125 5475
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -1061,31 +1061,31 @@ F 3 "" H 4825 6975 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	3250 5025 3775 5025
+	3250 5025 3900 5025
 Wire Wire Line
-	3250 5125 3775 5125
+	3250 5125 3900 5125
 Wire Wire Line
-	3250 5225 3775 5225
+	3250 5225 4075 5225
 Wire Wire Line
-	3250 5325 3775 5325
+	3250 5325 4075 5325
 Wire Wire Line
-	3250 5575 3775 5575
+	3250 5575 3900 5575
 Wire Wire Line
-	3250 5675 3775 5675
+	3250 5675 3900 5675
 Wire Wire Line
-	3250 5475 3825 5475
+	3250 5475 4125 5475
 Wire Wire Line
-	3250 5775 3775 5775
+	3250 5775 4075 5775
 Wire Wire Line
-	3250 5875 3775 5875
+	3250 5875 4075 5875
 Wire Wire Line
-	3250 6125 3775 6125
+	3250 6125 3900 6125
 Wire Wire Line
-	3250 6025 3775 6025
+	3250 6025 3900 6025
 Wire Wire Line
-	3250 6225 3775 6225
+	3250 6225 4075 6225
 Wire Wire Line
-	3250 6325 3775 6325
+	3250 6325 4075 6325
 Wire Wire Line
 	3250 6475 3825 6475
 Wire Wire Line
@@ -1169,31 +1169,31 @@ Wire Wire Line
 Connection ~ 5025 6775
 Wire Wire Line
 	5025 6775 5175 6775
-Text Label 3775 5025 2    50   ~ 0
+Text Label 4300 5025 2    39   ~ 0
 -Vp
-Text Label 3775 5125 2    50   ~ 0
+Text Label 4300 5125 2    39   ~ 0
 +Vp
-Text Label 3775 5225 2    50   ~ 0
+Text Label 4075 5225 2    39   ~ 0
 Vpanel_adc-
-Text Label 3775 5325 2    50   ~ 0
+Text Label 4075 5325 2    39   ~ 0
 Vpanel_adc+
-Text Label 3775 5575 2    39   ~ 0
-Ipanel+
-Text Label 3775 5675 2    39   ~ 0
-Ipanel-
-Text Label 3775 6025 2    50   ~ 0
+Text Label 4300 5575 2    39   ~ 0
++Ip
+Text Label 4300 5675 2    39   ~ 0
+-Ip
+Text Label 4300 6025 2    39   ~ 0
 +B
-Text Label 3775 5875 2    39   ~ 0
+Text Label 4075 5875 2    39   ~ 0
 Ipanel_adc+
-Text Label 3775 6125 2    50   ~ 0
+Text Label 4300 6125 2    39   ~ 0
 -B
-Text Label 3775 6225 2    50   ~ 0
+Text Label 4075 6225 2    39   ~ 0
 Vbat_adc-
-Text Label 3775 6325 2    50   ~ 0
+Text Label 4075 6325 2    39   ~ 0
 Vbat_adc+
-Text Label 3825 6475 2    50   ~ 0
+Text Label 3825 6475 2    39   ~ 0
 BatOVInterrupt
-Text Label 3625 6575 2    50   ~ 0
+Text Label 3625 6575 2    39   ~ 0
 PWM
 Text Label 2600 3500 1    50   ~ 0
 -Vp
@@ -1214,12 +1214,12 @@ Source
 Text Label 6700 2700 2    50   ~ 0
 Gate
 Text Label 1700 2650 2    39   ~ 0
-Ipanel-
+-Ip
 Wire Wire Line
 	1700 2750 1850 2750
-Text Label 2150 5025 2    50   ~ 0
+Text Label 2150 5025 2    39   ~ 0
 +18V_OUT
-Text Label 2375 5475 2    50   ~ 0
+Text Label 2375 5475 2    39   ~ 0
 BatOVInterrupt
 Text Label 2375 5775 2    47   ~ 0
 PWM
@@ -1229,10 +1229,10 @@ Text Label 2347 6775 2    39   ~ 0
 Vpanel_adc+
 Text Label 2350 6875 2    39   ~ 0
 Vbat_adc+
-Text Label 3775 5775 2    39   ~ 0
+Text Label 4075 5775 2    39   ~ 0
 Ipanel_adc-
 Text Label 1700 2750 2    39   ~ 0
-Ipanel+
++Ip
 NoConn ~ 1700 6575
 NoConn ~ 1700 6525
 NoConn ~ 1700 6475
@@ -1405,4 +1405,100 @@ Text Notes 7130 5470 0    47   ~ 0
 Obseravaçoes para a placa definitiva\n
 Text Notes 7140 5540 0    39   ~ 0
 Adicionar um divisor de tensão na medida de tensão da batria e painel , para que seja mais seguro 
+$Comp
+L Device:R_Small R101
+U 1 1 5B12E107
+P 4000 5025
+F 0 "R101" V 3950 4800 39  0000 L CNN
+F 1 "??" V 3950 5125 39  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" H 4000 5025 50  0001 C CNN
+F 3 "" H 4000 5025 50  0001 C CNN
+F 4 "1%" V 4075 5075 39  0001 C CNN "Tolerance"
+	1    4000 5025
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4100 5025 4300 5025
+$Comp
+L Device:R_Small R102
+U 1 1 5B13E5AA
+P 4000 5125
+F 0 "R102" V 3950 4900 39  0000 L CNN
+F 1 "??" V 3950 5225 39  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" H 4000 5125 50  0001 C CNN
+F 3 "" H 4000 5125 50  0001 C CNN
+F 4 "1%" V 4075 5175 39  0001 C CNN "Tolerance"
+	1    4000 5125
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4100 5125 4300 5125
+$Comp
+L Device:R_Small R103
+U 1 1 5B13E8E1
+P 4000 6025
+F 0 "R103" V 3950 5800 39  0000 L CNN
+F 1 "??" V 3950 6125 39  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" H 4000 6025 50  0001 C CNN
+F 3 "" H 4000 6025 50  0001 C CNN
+F 4 "1%" V 4075 6075 39  0001 C CNN "Tolerance"
+	1    4000 6025
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4100 6025 4300 6025
+$Comp
+L Device:R_Small R104
+U 1 1 5B13E9BD
+P 4000 6125
+F 0 "R104" V 3950 5900 39  0000 L CNN
+F 1 "??" V 3950 6225 39  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" H 4000 6125 50  0001 C CNN
+F 3 "" H 4000 6125 50  0001 C CNN
+F 4 "1%" V 4075 6175 39  0001 C CNN "Tolerance"
+	1    4000 6125
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4100 6125 4300 6125
+Text Label 3625 5025 2    39   ~ 0
+Vp_sen-
+Text Label 3625 5125 2    39   ~ 0
+Vp_sen+
+Text Label 3625 6025 2    39   ~ 0
+Vb_sen+
+Text Label 3625 6125 2    39   ~ 0
+Vb_sen-
+$Comp
+L Device:R_Small R105
+U 1 1 5B210184
+P 4000 5575
+F 0 "R105" V 3950 5350 39  0000 L CNN
+F 1 "0R" V 3950 5675 39  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" H 4000 5575 50  0001 C CNN
+F 3 "" H 4000 5575 50  0001 C CNN
+F 4 "1%" V 4075 5625 39  0001 C CNN "Tolerance"
+	1    4000 5575
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4100 5575 4300 5575
+Text Label 3600 5575 2    39   ~ 0
+Ip_sen+
+Text Label 3600 5675 2    39   ~ 0
+Ip_sen-
+$Comp
+L Device:R_Small R106
+U 1 1 5B22C0BF
+P 4000 5675
+F 0 "R106" V 3950 5450 39  0000 L CNN
+F 1 "0R" V 3950 5775 39  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" H 4000 5675 50  0001 C CNN
+F 3 "" H 4000 5675 50  0001 C CNN
+F 4 "1%" V 4075 5725 39  0001 C CNN "Tolerance"
+	1    4000 5675
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4100 5675 4300 5675
 $EndSCHEMATC
