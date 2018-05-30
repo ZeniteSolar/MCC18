@@ -34,7 +34,7 @@
   )
 
   (setup
-    (last_trace_width 9)
+    (last_trace_width 0.508)
     (user_trace_width 0.508)
     (user_trace_width 0.8)
     (user_trace_width 1)
@@ -372,9 +372,9 @@
       (net 46 /PWM))
     (pad 16 thru_hole oval (at 43.18 -12.7 90) (size 1.2 2) (drill 0.762) (layers *.Cu *.Mask)
       (net 27 GNDA))
-    (model ${KIPRJMOD}/MCC_bibliotecas/MCCplaca.pretty/3D/SignalPCB.stp
-      (offset (xyz -28.44799957275391 7.619999885559082 9.524999856948853))
-      (scale (xyz 1 1 1))
+    (model ${KIPRJMOD}/MCC_bibliotecas/MCCplaca.pretty/3D/Signal.wrl
+      (offset (xyz -28.448 7.62 9.525))
+      (scale (xyz 0.3937007874015748 0.3937007874015748 0.3937007874015748))
       (rotate (xyz 0 0 0))
     )
     (model ${KISYS3DMOD}/Connector_PinSocket_2.54mm.3dshapes/PinSocket_1x04_P2.54mm_Vertical.wrl
@@ -2432,7 +2432,6 @@
     (arrow2b (pts (xy 38.608 39.878) (xy 39.194421 41.004504)))
   )
 
-  (segment (start 233.318 48.088) (end 240.094 54.864) (width 9) (layer F.Cu) (net 36) (tstamp 5B0F199D))
   (segment (start 134.2136 58.928) (end 134.112 58.8264) (width 1) (layer B.Cu) (net 3) (status 30))
   (segment (start 137.668 58.928) (end 134.2136 58.928) (width 1) (layer B.Cu) (net 3) (status 30))
   (segment (start 102.616 60.5005) (end 102.616 58.1175) (width 1) (layer F.Cu) (net 3) (status 30))
@@ -2563,6 +2562,7 @@
   (segment (start 159.415 116.683) (end 159.766 116.332) (width 1) (layer B.Cu) (net 34) (status 30))
   (segment (start 157.226 116.683) (end 159.415 116.683) (width 1) (layer B.Cu) (net 34) (status 30))
   (segment (start 157.226 116.683) (end 154.94 116.683) (width 1) (layer B.Cu) (net 34) (status 30))
+  (segment (start 233.318 48.088) (end 240.094 54.864) (width 9) (layer F.Cu) (net 36) (tstamp 5B0F199D))
   (segment (start 240.202 54.972) (end 240.202 54.2994) (width 9) (layer B.Cu) (net 36) (status 30))
   (segment (start 240.202 54.972) (end 233.426 48.196) (width 9) (layer B.Cu) (net 36) (tstamp 5B0F199D))
   (segment (start 177.016 83.192) (end 177.038 83.214) (width 1) (layer F.Cu) (net 37) (status 30))
