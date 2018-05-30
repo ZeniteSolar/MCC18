@@ -1401,8 +1401,6 @@ Wire Wire Line
 Wire Wire Line
 	2150 5025 1750 5025
 Connection ~ 1750 5025
-Connection ~ 1700 5125
-Connection ~ 1700 5325
 Text Notes 7130 5470 0    47   ~ 0
 Obseravaçoes para a placa definitiva\n
 Text Notes 7140 5540 0    39   ~ 0
