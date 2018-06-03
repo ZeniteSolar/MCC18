@@ -1,4 +1,4 @@
-update=Thu 31 May 2018 02:37:06 AM -03
+update=03/06/2018 13:55:07
 version=1
 last_client=kicad
 [general]
@@ -35,7 +35,7 @@ EquName1=${KIPRJMOD}/MCCplaca.pretty/joj.equ
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
-PlotDirectoryName=PDFS/
+PlotDirectoryName=PDF/Esquematico/
 SubpartIdSeparator=0
 SubpartFirstId=65
 NetFmtName=Pcbnew

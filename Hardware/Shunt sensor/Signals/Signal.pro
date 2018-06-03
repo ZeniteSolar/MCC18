@@ -1,4 +1,4 @@
-update=24/05/2018 14:30:56
+update=03/06/2018 13:54:23
 version=1
 last_client=kicad
 [general]
@@ -34,7 +34,7 @@ LibDir=
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
-PlotDirectoryName=
+PlotDirectoryName=PDF/Esquematico/
 SubpartIdSeparator=0
 SubpartFirstId=65
 NetFmtName=

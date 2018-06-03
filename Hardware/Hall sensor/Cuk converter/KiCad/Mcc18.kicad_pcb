@@ -1,4 +1,4 @@
-(kicad_pcb (version 20171130) (host pcbnew "(5.0.0-rc2-39-ga12b9db58)")
+(kicad_pcb (version 20171130) (host pcbnew "(5.0.0-rc2-dev-586-g888c43477)")
 
   (general
     (thickness 1.6)
@@ -88,7 +88,7 @@
       (useauxorigin false)
       (hpglpennumber 1)
       (hpglpenspeed 20)
-      (hpglpendiameter 15.000000)
+      (hpglpendiameter 15)
       (psnegative false)
       (psa4output false)
       (plotreference true)
@@ -96,11 +96,11 @@
       (plotinvisibletext false)
       (padsonsilk false)
       (subtractmaskfromsilk true)
-      (outputformat 1)
+      (outputformat 4)
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
-      (outputdirectory GERBERS))
+      (outputdirectory PDF/))
   )
 
   (net 0 "")
