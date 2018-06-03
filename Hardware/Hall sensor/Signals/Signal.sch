@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:Signal-cache
 EELAYER 26 0
 EELAYER END
 $Descr A3 16535 11693
@@ -240,17 +241,6 @@ F 1 "LM324" H 5925 7175 50  0000 C CNN
 F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 5725 7050 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lm124-n.pdf" H 5825 7150 50  0001 C CNN
 	1    5775 6950
-	1    0    0    1   
-$EndComp
-$Comp
-L Amplifier_Operational:LM324 U3
-U 4 1 5AE46B70
-P 7425 6200
-F 0 "U3" H 7475 5975 50  0000 C CNN
-F 1 "LM324" H 7525 6050 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 7375 6300 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lm124-n.pdf" H 7475 6400 50  0001 C CNN
-	4    7425 6200
 	1    0    0    1   
 $EndComp
 $Comp
@@ -771,17 +761,6 @@ F 3 "~" H 6625 9350 50  0001 C CNN
 $EndComp
 Connection ~ 6175 7850
 Connection ~ 6175 9350
-$Comp
-L Amplifier_Operational:LM324 U4
-U 4 1 5B00B288
-P 7425 8550
-F 0 "U4" H 7425 8350 50  0000 L CNN
-F 1 "LM324" H 7425 8425 50  0000 L CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 7375 8650 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lm124-n.pdf" H 7475 8750 50  0001 C CNN
-	4    7425 8550
-	1    0    0    1   
-$EndComp
 Wire Wire Line
 	7125 8450 7025 8450
 Wire Wire Line
@@ -1154,32 +1133,6 @@ Wire Wire Line
 	4925 6200 4925 6250
 Connection ~ 4925 6250
 $Comp
-L Device:R_US R30
-U 1 1 5B0EBB6F
-P 4350 8850
-F 0 "R30" V 4145 8850 50  0000 C CNN
-F 1 "??" V 4236 8850 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" V 4390 8840 50  0001 C CNN
-F 3 "~" H 4350 8850 50  0001 C CNN
-	1    4350 8850
-	0    1    -1   0   
-$EndComp
-$Comp
-L Device:R_US R35
-U 1 1 5B119426
-P 4360 8350
-F 0 "R35" V 4155 8350 50  0000 C CNN
-F 1 "??" V 4246 8350 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" V 4400 8340 50  0001 C CNN
-F 3 "~" H 4360 8350 50  0001 C CNN
-	1    4360 8350
-	0    1    -1   0   
-$EndComp
-Wire Wire Line
-	3680 8350 4210 8350
-Wire Wire Line
-	3675 8850 4200 8850
-$Comp
 L power:GNDA #PWR0140
 U 1 1 5B17F9DB
 P 4835 9190
@@ -1305,50 +1258,13 @@ $EndComp
 Wire Wire Line
 	6050 3725 6150 3725
 Wire Wire Line
-	4500 8850 4835 8850
-Wire Wire Line
-	4510 8350 4855 8350
-$Comp
-L Amplifier_Operational:LM324 U2
-U 5 1 5B286BD8
-P 6850 3475
-F 0 "U2" H 6850 2997 50  0001 C CNN
-F 1 "LM324" H 6575 3300 50  0001 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 6800 3575 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lm124-n.pdf" H 6900 3675 50  0001 C CNN
-	5    6850 3475
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Amplifier_Operational:LM324 U3
-U 5 1 5B294576
-P 7425 6200
-F 0 "U3" H 7425 5722 50  0001 C CNN
-F 1 "LM324" H 7150 6025 50  0001 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 7375 6300 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lm124-n.pdf" H 7475 6400 50  0001 C CNN
-	5    7425 6200
-	1    0    0    1   
-$EndComp
-$Comp
-L Amplifier_Operational:LM324 U4
-U 5 1 5B33CF40
-P 7425 8550
-F 0 "U4" H 7425 8072 50  0001 C CNN
-F 1 "LM324" H 7500 8700 50  0001 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 7375 8650 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lm124-n.pdf" H 7475 8750 50  0001 C CNN
-	5    7425 8550
-	1    0    0    1   
-$EndComp
-Wire Wire Line
 	7325 8850 7325 8900
 Connection ~ 4835 8850
 Wire Wire Line
-	4835 8850 4975 8850
+	4835 8850 4900 8850
 Connection ~ 4855 8350
 Wire Wire Line
-	4855 8350 4975 8350
+	4855 8350 4900 8350
 Connection ~ 4925 5900
 Text Label 3680 8350 0    39   ~ 0
 Vpanel_Ref
@@ -1464,4 +1380,51 @@ Wire Wire Line
 Wire Wire Line
 	12600 4075 13300 4075
 Connection ~ 13300 4075
+Wire Wire Line
+	3680 8350 4855 8350
+Wire Wire Line
+	3675 8850 4835 8850
+$Comp
+L Device:R_US R35
+U 1 1 5B1636CD
+P 4900 8600
+F 0 "R35" V 4695 8600 50  0000 C CNN
+F 1 "??" V 4786 8600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.29x1.40mm_HandSolder" V 4940 8590 50  0001 C CNN
+F 3 "~" H 4900 8600 50  0001 C CNN
+	1    4900 8600
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	4900 8350 4900 8450
+Connection ~ 4900 8350
+Wire Wire Line
+	4900 8350 4975 8350
+Wire Wire Line
+	4900 8850 4900 8750
+Connection ~ 4900 8850
+Wire Wire Line
+	4900 8850 4975 8850
+$Comp
+L Amplifier_Operational:LM324 U3
+U 4 1 5AE46B70
+P 7425 6200
+F 0 "U3" H 7475 5975 50  0000 C CNN
+F 1 "LM324" H 7525 6050 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 7375 6300 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm124-n.pdf" H 7475 6400 50  0001 C CNN
+	4    7425 6200
+	1    0    0    1   
+$EndComp
+$Comp
+L Amplifier_Operational:LM324 U4
+U 4 1 5B00B288
+P 7425 8550
+F 0 "U4" H 7425 8350 50  0000 L CNN
+F 1 "LM324" H 7425 8425 50  0000 L CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 7375 8650 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm124-n.pdf" H 7475 8750 50  0001 C CNN
+	4    7425 8550
+	1    0    0    1   
+$EndComp
 $EndSCHEMATC
