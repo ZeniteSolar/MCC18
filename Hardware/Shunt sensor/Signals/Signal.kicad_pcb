@@ -86,11 +86,11 @@
       (plotinvisibletext false)
       (padsonsilk false)
       (subtractmaskfromsilk false)
-      (outputformat 1)
+      (outputformat 4)
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
-      (outputdirectory GERBERS/))
+      (outputdirectory PDF/))
   )
 
   (net 0 "")
