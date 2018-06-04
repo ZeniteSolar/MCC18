@@ -145,11 +145,27 @@ X VS+ 8 2200 0 300 L 59 59 1 0 W
 ENDDRAW
 ENDDEF
 #
-# MCC18:Signals_MCC-MCC18-Mcc18-rescue-Mcc18-rescue-Mcc18-rescue-Mcc18-rescue
+# Mechanical:Mounting_Hole
 #
-DEF MCC18:Signals_MCC-MCC18-Mcc18-rescue-Mcc18-rescue-Mcc18-rescue-Mcc18-rescue U 0 40 Y Y 1 F N
+DEF Mechanical:Mounting_Hole MK 0 40 Y Y 1 F N
+F0 "MK" 0 200 50 H V C CNN
+F1 "Mechanical:Mounting_Hole" 0 125 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Mounting?Hole*
+ Hole*
+$ENDFPLIST
+DRAW
+C 0 0 50 0 1 50 N
+ENDDRAW
+ENDDEF
+#
+# Signal-rescue:Signals_MCC-MCC18-Mcc18-rescue-Mcc18-rescue-Mcc18-rescue-Mcc18-rescue-MCC18
+#
+DEF Signal-rescue:Signals_MCC-MCC18-Mcc18-rescue-Mcc18-rescue-Mcc18-rescue-Mcc18-rescue-MCC18 U 0 40 Y Y 1 F N
 F0 "U" -650 0 50 H V C CNN
-F1 "MCC18:Signals_MCC-MCC18-Mcc18-rescue-Mcc18-rescue-Mcc18-rescue-Mcc18-rescue" -250 0 50 H V C CNN
+F1 "Signal-rescue:Signals_MCC-MCC18-Mcc18-rescue-Mcc18-rescue-Mcc18-rescue-Mcc18-rescue-MCC18" -250 0 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -180,22 +196,6 @@ X IPanelSIG 6 100 -650 100 L 31 31 1 1 I
 X IpanelRef 7 100 -750 100 L 31 31 1 1 I
 X GNDA 8 100 -850 100 L 31 31 1 1 W
 X IPanel 9 100 -950 100 L 31 31 1 1 O
-ENDDRAW
-ENDDEF
-#
-# Mechanical:Mounting_Hole
-#
-DEF Mechanical:Mounting_Hole MK 0 40 Y Y 1 F N
-F0 "MK" 0 200 50 H V C CNN
-F1 "Mechanical:Mounting_Hole" 0 125 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- Mounting?Hole*
- Hole*
-$ENDFPLIST
-DRAW
-C 0 0 50 0 1 50 N
 ENDDRAW
 ENDDEF
 #

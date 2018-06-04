@@ -350,7 +350,7 @@ Wire Wire Line
 Wire Wire Line
 	4725 1150 4725 925 
 $Comp
-L MCC18:Signals_MCC-MCC18-Mcc18-rescue-Mcc18-rescue-Mcc18-rescue-Mcc18-rescue U1
+L Signal-rescue:Signals_MCC-MCC18-Mcc18-rescue-Mcc18-rescue-Mcc18-rescue-Mcc18-rescue-MCC18 U1
 U 1 1 5B077C35
 P 6600 1475
 F 0 "U1" H 6419 1590 50  0000 C CNN
@@ -434,7 +434,7 @@ U 1 1 5B349E53
 P 6375 695
 F 0 "MK1" H 6475 741 50  0000 L CNN
 F 1 "Mounting_Hole" H 6475 650 50  0000 L CNN
-F 2 "MountingHole:MountingHole_4mm_Pad_Via" H 6375 695 50  0001 C CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad" H 6375 695 50  0001 C CNN
 F 3 "" H 6375 695 50  0001 C CNN
 	1    6375 695 
 	1    0    0    -1  
