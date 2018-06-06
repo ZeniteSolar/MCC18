@@ -39,12 +39,12 @@ $EndComp
 $Comp
 L Device:C Ci3
 U 1 1 5B02250C
-P 3200 3500
-F 0 "Ci3" V 3050 3500 50  0000 C CNN
-F 1 "4.7uF" V 2950 3500 50  0000 C CNN
-F 2 "Capacitor_THT:C_Rect_L16.5mm_W9.2mm_P15.00mm_MKT" H 3238 3350 50  0001 C CNN
-F 3 "" H 3200 3500 50  0001 C CNN
-	1    3200 3500
+P 7150 4300
+F 0 "Ci3" V 7000 4300 50  0000 C CNN
+F 1 "4.7uF" V 6900 4300 50  0000 C CNN
+F 2 "Capacitor_THT:C_Rect_L16.5mm_W9.2mm_P15.00mm_MKT" H 7188 4150 50  0001 C CNN
+F 3 "" H 7150 4300 50  0001 C CNN
+	1    7150 4300
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -86,23 +86,23 @@ Connection ~ 6600 2400
 $Comp
 L Device:C Ci2
 U 1 1 5B0345D8
-P 3200 3900
-F 0 "Ci2" V 3050 3900 50  0000 C CNN
-F 1 "4.7uF" V 2950 3900 50  0000 C CNN
-F 2 "Capacitor_THT:C_Rect_L16.5mm_W9.2mm_P15.00mm_MKT" H 3238 3750 50  0001 C CNN
-F 3 "" H 3200 3900 50  0001 C CNN
-	1    3200 3900
+P 7150 3900
+F 0 "Ci2" V 7000 3900 50  0000 C CNN
+F 1 "4.7uF" V 6900 3900 50  0000 C CNN
+F 2 "Capacitor_THT:C_Rect_L16.5mm_W9.2mm_P15.00mm_MKT" H 7188 3750 50  0001 C CNN
+F 3 "" H 7150 3900 50  0001 C CNN
+	1    7150 3900
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:C Ci1
 U 1 1 5B034644
-P 3200 4300
-F 0 "Ci1" V 3050 4300 50  0000 C CNN
-F 1 "4.7uF" V 2950 4300 50  0000 C CNN
-F 2 "Capacitor_THT:C_Rect_L16.5mm_W9.2mm_P15.00mm_MKT" H 3238 4150 50  0001 C CNN
-F 3 "" H 3200 4300 50  0001 C CNN
-	1    3200 4300
+P 7150 3500
+F 0 "Ci1" V 7000 3500 50  0000 C CNN
+F 1 "4.7uF" V 6900 3500 50  0000 C CNN
+F 2 "Capacitor_THT:C_Rect_L16.5mm_W9.2mm_P15.00mm_MKT" H 7188 3350 50  0001 C CNN
+F 3 "" H 7150 3500 50  0001 C CNN
+	1    7150 3500
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -141,56 +141,56 @@ $EndComp
 $Comp
 L Device:C Co2
 U 1 1 5B034774
-P 7150 3900
-F 0 "Co2" V 7300 3900 50  0000 C CNN
-F 1 "4.7uF" V 7400 3900 50  0000 C CNN
-F 2 "MCC:C_Rect_L29.0mm_W11.9mm_P27.50mm_MKT" H 7188 3750 50  0001 C CNN
-F 3 "" H 7150 3900 50  0001 C CNN
-	1    7150 3900
+P 3200 3900
+F 0 "Co2" V 3350 3900 50  0000 C CNN
+F 1 "4.7uF" V 3450 3900 50  0000 C CNN
+F 2 "MCC:C_Rect_L29.0mm_W11.9mm_P27.50mm_MKT" H 3238 3750 50  0001 C CNN
+F 3 "" H 3200 3900 50  0001 C CNN
+	1    3200 3900
 	0    1    1    0   
 $EndComp
 $Comp
 L Mechanical:Mounting_Hole_PAD Screw1
 U 1 1 5B0387A2
-P 2300 4450
-F 0 "Screw1" H 2650 4400 50  0000 R CNN
-F 1 "-P" H 2500 4500 50  0000 R CNN
-F 2 "MCC:MountingHole_5mm_Pad" H 2300 4450 50  0001 C CNN
-F 3 "" H 2300 4450 50  0001 C CNN
-	1    2300 4450
+P 8000 4450
+F 0 "Screw1" H 8350 4400 50  0000 R CNN
+F 1 "-P" H 8200 4500 50  0000 R CNN
+F 2 "MCC:MountingHole_5mm_Pad" H 8000 4450 50  0001 C CNN
+F 3 "" H 8000 4450 50  0001 C CNN
+	1    8000 4450
 	-1   0    0    1   
 $EndComp
 $Comp
 L Mechanical:Mounting_Hole_PAD Screw2
 U 1 1 5B0388E1
-P 4050 4450
-F 0 "Screw2" H 3950 4408 50  0000 R CNN
-F 1 "+P" H 3950 4499 50  0000 R CNN
-F 2 "MCC:MountingHole_5mm_Pad" H 4050 4450 50  0001 C CNN
-F 3 "" H 4050 4450 50  0001 C CNN
-	1    4050 4450
-	-1   0    0    1   
-$EndComp
-$Comp
-L Mechanical:Mounting_Hole_PAD Screw3
-U 1 1 5B03A93B
 P 6300 4450
-F 0 "Screw3" H 6250 4400 50  0000 R CNN
-F 1 "-B" H 6200 4499 50  0000 R CNN
+F 0 "Screw2" H 6200 4408 50  0000 R CNN
+F 1 "+P" H 6200 4499 50  0000 R CNN
 F 2 "MCC:MountingHole_5mm_Pad" H 6300 4450 50  0001 C CNN
 F 3 "" H 6300 4450 50  0001 C CNN
 	1    6300 4450
 	-1   0    0    1   
 $EndComp
 $Comp
+L Mechanical:Mounting_Hole_PAD Screw3
+U 1 1 5B03A93B
+P 4050 4450
+F 0 "Screw3" H 4000 4400 50  0000 R CNN
+F 1 "-B" H 3950 4499 50  0000 R CNN
+F 2 "MCC:MountingHole_5mm_Pad" H 4050 4450 50  0001 C CNN
+F 3 "" H 4050 4450 50  0001 C CNN
+	1    4050 4450
+	-1   0    0    1   
+$EndComp
+$Comp
 L Mechanical:Mounting_Hole_PAD Screw4
 U 1 1 5B03AB19
-P 8000 4450
-F 0 "Screw4" H 7900 4408 50  0000 R CNN
-F 1 "+B" H 7900 4499 50  0000 R CNN
-F 2 "MCC:MountingHole_5mm_Pad" H 8000 4450 50  0001 C CNN
-F 3 "" H 8000 4450 50  0001 C CNN
-	1    8000 4450
+P 2300 4450
+F 0 "Screw4" H 2200 4408 50  0000 R CNN
+F 1 "+B" H 2200 4499 50  0000 R CNN
+F 2 "MCC:MountingHole_5mm_Pad" H 2300 4450 50  0001 C CNN
+F 3 "" H 2300 4450 50  0001 C CNN
+	1    2300 4450
 	-1   0    0    1   
 $EndComp
 Connection ~ 6300 3500
@@ -199,23 +199,23 @@ Wire Wire Line
 $Comp
 L Device:C Co3
 U 1 1 5B03D48A
-P 7150 3500
-F 0 "Co3" V 7300 3500 50  0000 C CNN
-F 1 "4.7uF" V 7400 3500 50  0000 C CNN
-F 2 "MCC:C_Rect_L29.0mm_W11.9mm_P27.50mm_MKT" H 7188 3350 50  0001 C CNN
-F 3 "" H 7150 3500 50  0001 C CNN
-	1    7150 3500
+P 3200 3500
+F 0 "Co3" V 3350 3500 50  0000 C CNN
+F 1 "4.7uF" V 3450 3500 50  0000 C CNN
+F 2 "MCC:C_Rect_L29.0mm_W11.9mm_P27.50mm_MKT" H 3238 3350 50  0001 C CNN
+F 3 "" H 3200 3500 50  0001 C CNN
+	1    3200 3500
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:C Co1
 U 1 1 5B03D649
-P 7150 4300
-F 0 "Co1" V 7300 4300 50  0000 C CNN
-F 1 "4.7uF" V 7400 4300 50  0000 C CNN
-F 2 "MCC:C_Rect_L29.0mm_W11.9mm_P27.50mm_MKT" H 7188 4150 50  0001 C CNN
-F 3 "" H 7150 4300 50  0001 C CNN
-	1    7150 4300
+P 3200 4300
+F 0 "Co1" V 3350 4300 50  0000 C CNN
+F 1 "4.7uF" V 3450 4300 50  0000 C CNN
+F 2 "MCC:C_Rect_L29.0mm_W11.9mm_P27.50mm_MKT" H 3238 4150 50  0001 C CNN
+F 3 "" H 3200 4300 50  0001 C CNN
+	1    3200 4300
 	0    1    1    0   
 $EndComp
 Wire Wire Line
@@ -346,7 +346,7 @@ F 3 "" H 5175 1725 50  0001 C CNN
 	0    -1   1    0   
 $EndComp
 Wire Wire Line
-	8000 1400 8000 3500
+	8000 1400 8000 2400
 $Comp
 L MCC18:DRIVER_(INEP)-Driver_FET-Mcc18-rescue-Mcc18-rescue-Mcc18-rescue-Mcc18-rescue-Mcc18-rescue U2
 U 1 1 5B0E871D
@@ -479,17 +479,15 @@ Wire Wire Line
 	10150 3325 10400 3325
 Wire Wire Line
 	3550 3500 4050 3500
-Wire Wire Line
-	2300 3500 2300 3800
 $Comp
 L Device:Fuse F1
 U 1 1 5B141241
-P 2300 3950
-F 0 "F1" H 2360 3996 50  0000 L CNN
-F 1 "Fuse" H 2360 3905 50  0000 L CNN
-F 2 "MCC:Porta_Fusivel" V 2230 3950 50  0001 C CNN
-F 3 "" H 2300 3950 50  0001 C CNN
-	1    2300 3950
+P 8000 3825
+F 0 "F1" H 8060 3871 50  0000 L CNN
+F 1 "Fuse" H 8060 3780 50  0000 L CNN
+F 2 "MCC:Porta_Fusivel" V 7930 3825 50  0001 C CNN
+F 3 "" H 8000 3825 50  0001 C CNN
+	1    8000 3825
 	1    0    0    -1  
 $EndComp
 Connection ~ 4050 3500
@@ -506,7 +504,7 @@ Driver Supply
 Wire Wire Line
 	6300 3500 6300 4350
 Wire Wire Line
-	8000 3500 8000 4350
+	8000 3500 8000 3675
 $Comp
 L power:GND #PWR0105
 U 1 1 5B1664F4
@@ -580,8 +578,6 @@ F 3 "" H 1900 5950 50  0001 C CNN
 	1    1900 5950
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	2300 4100 2300 4350
 Wire Wire Line
 	4050 3500 4050 4350
 Wire Wire Line
@@ -998,7 +994,7 @@ F 3 "" H 4925 7000 50  0001 C CNN
 	1    4925 7000
 	0    -1   -1   0   
 $EndComp
-Text Label 2300 4350 1    25   ~ 0
+Text Label 8000 4300 1    25   ~ 0
 -P_unfused
 Wire Wire Line
 	5075 1925 5175 1925
@@ -1084,13 +1080,13 @@ Text Label 5050 6800 2    39   ~ 0
 BatOVInterrupt
 Text Label 4850 6900 2    39   ~ 0
 PWM
-Text Label 2600 3500 1    50   ~ 0
+Text Label 7850 3500 1    50   ~ 0
 -Vp
-Text Label 3850 3500 1    50   ~ 0
+Text Label 6525 3500 1    50   ~ 0
 +Vp
-Text Label 6450 3500 1    50   ~ 0
+Text Label 3900 3500 1    50   ~ 0
 -B
-Text Label 7800 3500 1    50   ~ 0
+Text Label 2675 3500 1    50   ~ 0
 +B
 Text Label 10150 3825 0    47   ~ 0
 PWM
@@ -1330,28 +1326,17 @@ Text Label 4850 6350 2    39   ~ 0
 Vb_sen+
 Text Label 4850 6450 2    39   ~ 0
 Vb_sen-
-$Comp
-L Mcc18-rescue:INA211_DCK_6-INA211BIDCKR-Mcc18-rescue U6
-U 1 1 5B11478B
-P 9975 6100
-F 0 "U6" H 10150 5613 60  0000 C CNN
-F 1 "INA211" H 10150 5719 60  0000 C CNN
-F 2 "MCCplaca Shunt:INA211BIDCKR" H 11075 6340 60  0001 C CNN
-F 3 "" H 9675 6950 60  0000 C CNN
-	1    9975 6100
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	2300 1400 5075 1400
 $Comp
 L Device:R Rshunt1
 U 1 1 5B4A6175
-P 2300 2650
-F 0 "Rshunt1" H 2370 2696 50  0000 L CNN
-F 1 "500uR" H 2370 2605 50  0000 L CNN
-F 2 "MCCplaca Shunt:PML100HZPJV0L5" V 2230 2650 50  0001 C CNN
-F 3 "~" H 2300 2650 50  0001 C CNN
-	1    2300 2650
+P 8000 2650
+F 0 "Rshunt1" H 8070 2696 50  0000 L CNN
+F 1 "500uR" H 8070 2605 50  0000 L CNN
+F 2 "MCCplaca Shunt:PML100HZPJV0L5" V 7930 2650 50  0001 C CNN
+F 3 "~" H 8000 2650 50  0001 C CNN
+	1    8000 2650
 	1    0    0    -1  
 $EndComp
 Wire Notes Line
@@ -1363,7 +1348,7 @@ Wire Notes Line
 Text Notes 10450 6325 0    39   ~ 0
 Current Sensor\n
 $Comp
-L Mcc18-rescue:INA240-ina240_soic8-Mcc18-rescue U1
+L Mcc18-rescue:INA240-ina240_soic8-Mcc18-rescue-Mcc18-rescue U1
 U 1 1 5B114902
 P 7725 5700
 F 0 "U1" H 7950 5781 60  0000 C CNN
@@ -1420,71 +1405,6 @@ F 3 "" H 8400 5525 50  0001 C CNN
 	1    8400 5525
 	1    0    0    -1  
 $EndComp
-Text Label 9250 5850 0    39   ~ 0
-Rs+
-Text Label 9250 5950 0    39   ~ 0
-Rs-
-Wire Wire Line
-	9250 5950 9475 5950
-$Comp
-L power:+5VA #PWR0118
-U 1 1 5B6360D0
-P 10125 5700
-F 0 "#PWR0118" H 10125 5550 50  0001 C CNN
-F 1 "+5VA" H 10140 5873 50  0000 C CNN
-F 2 "" H 10125 5700 50  0001 C CNN
-F 3 "" H 10125 5700 50  0001 C CNN
-	1    10125 5700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C12
-U 1 1 5B644DE0
-P 10300 5850
-F 0 "C12" H 10392 5812 39  0000 L CNN
-F 1 "100nF" H 10392 5887 39  0000 L CNN
-F 2 "MCCplaca Shunt:C_0805_2012Metric_Pad1.29x1.40mm_HandSolder" H 10300 5850 50  0001 C CNN
-F 3 "" H 10300 5850 50  0001 C CNN
-	1    10300 5850
-	1    0    0    1   
-$EndComp
-Wire Wire Line
-	10125 5700 10125 5750
-Wire Wire Line
-	10300 5750 10125 5750
-Connection ~ 10125 5750
-Wire Wire Line
-	10125 5750 10125 5850
-Wire Wire Line
-	10125 5950 10300 5950
-$Comp
-L power:GNDA #PWR0119
-U 1 1 5B69EBD7
-P 10300 6050
-F 0 "#PWR0119" H 10300 5800 50  0001 C CNN
-F 1 "GNDA" H 10305 5877 50  0000 C CNN
-F 2 "" H 10300 6050 50  0001 C CNN
-F 3 "" H 10300 6050 50  0001 C CNN
-	1    10300 6050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10300 5950 10300 6050
-Connection ~ 10300 5950
-Text Label 9125 6050 0    39   ~ 0
-INA211_OUT
-$Comp
-L Device:R_Small R106
-U 1 1 5B6DDB79
-P 9100 5725
-F 0 "R106" H 9041 5687 39  0000 R CNN
-F 1 "0R" H 9041 5762 39  0000 R CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 9100 5725 50  0001 C CNN
-F 3 "" H 9100 5725 50  0001 C CNN
-F 4 "1%" V 9175 5775 39  0001 C CNN "Tolerance"
-	1    9100 5725
-	-1   0    0    1   
-$EndComp
 $Comp
 L Device:R_Small R105
 U 1 1 5B6EFB69
@@ -1497,10 +1417,6 @@ F 4 "1%" V 9075 5775 39  0001 C CNN "Tolerance"
 	1    9000 5725
 	1    0    0    1   
 $EndComp
-Wire Wire Line
-	9250 5850 9475 5850
-Wire Wire Line
-	9100 6050 9475 6050
 Text Label 8750 4950 0    39   ~ 0
 Ip_sen+
 Wire Wire Line
@@ -1577,9 +1493,6 @@ Wire Wire Line
 	3225 6850 3350 6850
 Text Label 3450 7000 0    39   ~ 0
 Ip_sen+
-Wire Wire Line
-	10125 6050 10125 5950
-Connection ~ 10125 5950
 $Comp
 L Device:R_Small R109
 U 1 1 5BB245F0
@@ -1601,28 +1514,22 @@ Wire Wire Line
 	2950 7225 2950 7300
 Wire Notes Line
 	6845 4805 10925 4805
-Wire Wire Line
-	2300 2800 2300 3500
-Wire Wire Line
-	2300 1400 2300 2500
-Text Label 1975 2600 0    39   ~ 0
+Text Label 8325 2500 2    39   ~ 0
 Rs+
-Text Label 1975 2700 0    39   ~ 0
+Text Label 8325 2800 2    39   ~ 0
 Rs-
 Wire Wire Line
-	1975 2700 2200 2700
+	8325 2800 8100 2800
 Wire Wire Line
-	1975 2600 2200 2600
+	8325 2500 8100 2500
 Wire Wire Line
-	2200 2600 2200 2500
+	8100 2500 8100 2400
 Wire Wire Line
-	2200 2500 2300 2500
-Connection ~ 2300 2500
+	8100 2400 8000 2400
 Wire Wire Line
-	2200 2700 2200 2800
+	8100 2800 8100 2900
 Wire Wire Line
-	2200 2800 2300 2800
-Connection ~ 2300 2800
+	8100 2900 8000 2900
 Wire Wire Line
 	4100 2400 4100 2175
 Wire Wire Line
@@ -1670,18 +1577,11 @@ $EndComp
 Wire Wire Line
 	9000 5825 9000 6050
 Wire Wire Line
-	9100 5825 9100 6050
-Wire Wire Line
 	8750 4950 9050 4950
 Wire Wire Line
 	8950 5050 8950 5075
 Wire Wire Line
-	9100 5550 9050 5550
-Wire Wire Line
-	9100 5550 9100 5625
-Wire Wire Line
 	9000 5550 9000 5625
-Connection ~ 9050 5550
 Wire Wire Line
 	9050 5550 9000 5550
 Wire Wire Line
@@ -1698,30 +1598,8 @@ Wire Wire Line
 	3450 7100 3350 7100
 Text Label 4845 5350 2    39   ~ 0
 Vp_sen-
-$Comp
-L Device:R_Small R108
-U 1 1 5B197291
-P 8850 5175
-F 0 "R108" H 8791 5137 39  0000 R CNN
-F 1 "0R" H 8791 5212 39  0000 R CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 8850 5175 50  0001 C CNN
-F 3 "" H 8850 5175 50  0001 C CNN
-F 4 "1%" V 8925 5225 39  0001 C CNN "Tolerance"
-	1    8850 5175
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8750 5050 8850 5050
-Wire Wire Line
-	8850 5075 8850 5050
-Connection ~ 8850 5050
-Wire Wire Line
-	8850 5050 8950 5050
-Wire Wire Line
-	8850 5275 8950 5275
 Wire Wire Line
 	8950 5275 8950 5300
-Connection ~ 8950 5275
 $Comp
 L power:GNDA #PWR0102
 U 1 1 5B21544E
@@ -1746,4 +1624,122 @@ F 3 "" H 1150 4025 50  0001 C CNN
 	1    1150 4025
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	8000 3975 8000 4350
+Wire Wire Line
+	2300 3500 2300 4350
+Wire Wire Line
+	8000 2800 8000 2900
+Wire Wire Line
+	2300 1400 2300 3500
+Connection ~ 8000 2400
+Wire Wire Line
+	8000 2400 8000 2500
+Connection ~ 8000 2900
+Wire Wire Line
+	8000 2900 8000 3500
+Wire Wire Line
+	8750 5050 8950 5050
+$Comp
+L Device:C_Small C?
+U 1 1 5B293655
+P 9800 5800
+F 0 "C?" H 9900 5825 39  0000 L CNN
+F 1 "100nF" H 9900 5775 39  0000 L CNN
+F 2 "MCC:C_0805_2012Metric_Pad1.29x1.40mm_HandSolder" H 9800 5800 50  0001 C CNN
+F 3 "" H 9800 5800 50  0001 C CNN
+	1    9800 5800
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9900 5600 9800 5600
+Wire Wire Line
+	9800 5600 9800 5700
+Wire Wire Line
+	10100 5600 10200 5600
+Wire Wire Line
+	10200 5600 10200 5700
+Wire Wire Line
+	9800 5900 9800 6000
+Connection ~ 9800 5600
+Wire Wire Line
+	10200 5900 10200 6000
+Connection ~ 10200 5600
+Wire Wire Line
+	10200 5600 10400 5600
+$Comp
+L power:GNDA #PWR?
+U 1 1 5B293664
+P 9800 6000
+F 0 "#PWR?" H 9800 5750 39  0001 C CNN
+F 1 "GNDA" H 9900 5825 50  0000 R CNN
+F 2 "" H 9800 6000 50  0001 C CNN
+F 3 "" H 9800 6000 50  0001 C CNN
+	1    9800 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5B29366A
+P 10200 6000
+F 0 "#PWR?" H 10200 5750 50  0001 C CNN
+F 1 "GND" H 10205 5827 50  0000 C CNN
+F 2 "" H 10200 6000 50  0001 C CNN
+F 3 "" H 10200 6000 50  0001 C CNN
+	1    10200 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L_Small L?
+U 1 1 5B293670
+P 10000 5600
+F 0 "L?" V 10100 5600 39  0000 C CNN
+F 1 "L_Small" V 10050 5600 39  0000 C CNN
+F 2 "Inductor_SMD:L_0805_2012Metric_Pad1.29x1.40mm_HandSolder" H 10000 5600 50  0001 C CNN
+F 3 "~" H 10000 5600 50  0001 C CNN
+	1    10000 5600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5B293676
+P 10200 5800
+F 0 "C?" H 10300 5825 39  0000 L CNN
+F 1 "100nF" H 10300 5775 39  0000 L CNN
+F 2 "MCC:C_0805_2012Metric_Pad1.29x1.40mm_HandSolder" H 10200 5800 50  0001 C CNN
+F 3 "" H 10200 5800 50  0001 C CNN
+	1    10200 5800
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	10400 5500 10400 5600
+Connection ~ 10400 5600
+Wire Wire Line
+	10400 5600 10550 5600
+$Comp
+L power:+5VA #PWR?
+U 1 1 5B29367F
+P 9700 5475
+F 0 "#PWR?" H 9700 5325 50  0001 C CNN
+F 1 "+5VA" H 9715 5603 50  0000 L CNN
+F 2 "" H 9700 5475 50  0001 C CNN
+F 3 "" H 9700 5475 50  0001 C CNN
+	1    9700 5475
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5B293685
+P 10400 5500
+F 0 "#PWR?" H 10400 5350 50  0001 C CNN
+F 1 "+5V" H 10415 5673 50  0000 C CNN
+F 2 "" H 10400 5500 50  0001 C CNN
+F 3 "" H 10400 5500 50  0001 C CNN
+	1    10400 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9700 5475 9700 5600
+Wire Wire Line
+	9700 5600 9800 5600
 $EndSCHEMATC
