@@ -1,0 +1,63 @@
+Circuit: * C:\users\joaoantoniocardoso\Desktop\ZeniteSolar\2018\MCC18\Hardware\Shunt_sensor\Simulations\cuk.asc
+
+Instance "m:u2:u1:t1:ni2": Length shorter than recommended for a level 1 MOSFET.
+Instance "m:u2:u1:t2:ni2": Length shorter than recommended for a level 1 MOSFET.
+Instance "m:u2:u1:t3:6": Length shorter than recommended for a level 1 MOSFET.
+Instance "m:u2:u1:t3:6": Width narrower than recommended for a level 1 MOSFET.
+Instance "m:u2:u1:mp1:1": Length shorter than recommended for a level 1 MOSFET.
+Instance "m:u2:u1:t4:1": Length shorter than recommended for a level 1 MOSFET.
+Instance "m:u2:u1:t4:1": Width narrower than recommended for a level 1 MOSFET.
+Instance "m:u2:u1:md1:6": Length shorter than recommended for a level 1 MOSFET.
+u3:input1:vi3b: Missing value, assumed 0V @ DC
+u3:input1:vi8b: Missing value, assumed 0V @ DC
+u3:output:vi3b: Missing value, assumed 0V @ DC
+u3:output:vi8b: Missing value, assumed 0V @ DC
+u3:u1:vi3b: Missing value, assumed 0V @ DC
+u3:u1:vi8b: Missing value, assumed 0V @ DC
+u3:bias:vib1: Missing value, assumed 0V @ DC
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Gmin = 10
+Gmin = 1.07374
+Gmin = 0.115292
+Gmin = 0.0123794
+vernier = 0.5
+vernier = 0.666667
+Gmin = 0.0043261
+vernier = 0.888888
+vernier = 0.444444
+Gmin = 0.00109875
+vernier = 0.222222
+vernier = 0.111111
+vernier = 0.0555555
+vernier = 0.0277778
+Gmin = 0.00101279
+vernier = 0.0138889
+vernier = 0.00694444
+vernier = 0.00347222
+Gmin = 0.000999717
+vernier = 0.00173611
+vernier = 0.000868055
+vernier = 0.000434028
+Gmin = 0
+Gmin stepping succeeded in finding the operating point.
+
+
+Date: Tue Jun 05 21:54:27 2018
+Total elapsed time: 9.102 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 61925
+traniter = 60272
+tranpoints = 23752
+accept = 17371
+rejected = 6381
+matrix size = 359
+fillins = 342
+solver = Alternate
+Thread vector: 76.5/43.6[7] 42.7/19.3[7] 17.4/8.2[7] 8.0/5.4[6]  2592/500
+Matrix Compiler1: 46.65 KB object code size  27.5/18.7/[12.1]
+Matrix Compiler2: 41.43 KB object code size  17.5/20.7/[9.5]
+
