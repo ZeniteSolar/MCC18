@@ -1348,7 +1348,7 @@ Wire Notes Line
 Text Notes 10450 6325 0    39   ~ 0
 Current Sensor\n
 $Comp
-L Mcc18-rescue:INA240-ina240_soic8-Mcc18-rescue-Mcc18-rescue U1
+L Mcc18-rescue:INA240-ina240_soic8-Mcc18-rescue-Mcc18-rescue-Mcc18-rescue U1
 U 1 1 5B114902
 P 7725 5700
 F 0 "U1" H 7950 5781 60  0000 C CNN
@@ -1394,17 +1394,6 @@ F 3 "" H 8550 5625 50  0001 C CNN
 $EndComp
 Text Label 8325 6050 0    39   ~ 0
 INA240_OUT
-$Comp
-L power:+5VA #PWR0117
-U 1 1 5B575A82
-P 8400 5525
-F 0 "#PWR0117" H 8400 5375 50  0001 C CNN
-F 1 "+5VA" H 8415 5698 50  0000 C CNN
-F 2 "" H 8400 5525 50  0001 C CNN
-F 3 "" H 8400 5525 50  0001 C CNN
-	1    8400 5525
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:R_Small R105
 U 1 1 5B6EFB69
@@ -1488,7 +1477,6 @@ Wire Wire Line
 	8400 5525 8550 5525
 Wire Wire Line
 	8400 5525 8400 5950
-Connection ~ 8400 5525
 Wire Wire Line
 	3225 6850 3350 6850
 Text Label 3450 7000 0    39   ~ 0
@@ -1717,17 +1705,6 @@ Connection ~ 10400 5600
 Wire Wire Line
 	10400 5600 10550 5600
 $Comp
-L power:+5VA #PWR?
-U 1 1 5B29367F
-P 9700 5475
-F 0 "#PWR?" H 9700 5325 50  0001 C CNN
-F 1 "+5VA" H 9715 5603 50  0000 L CNN
-F 2 "" H 9700 5475 50  0001 C CNN
-F 3 "" H 9700 5475 50  0001 C CNN
-	1    9700 5475
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+5V #PWR?
 U 1 1 5B293685
 P 10400 5500
@@ -1739,7 +1716,10 @@ F 3 "" H 10400 5500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9700 5475 9700 5600
+	8800 5600 8800 5525
 Wire Wire Line
-	9700 5600 9800 5600
+	8800 5525 8550 5525
+Wire Wire Line
+	8800 5600 9800 5600
+Connection ~ 8550 5525
 $EndSCHEMATC
