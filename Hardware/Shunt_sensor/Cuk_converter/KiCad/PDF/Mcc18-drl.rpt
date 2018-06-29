@@ -1,5 +1,5 @@
-Drill report for C:/GitZenite/MCC18/Hardware/Shunt sensor/Cuk converter/KiCad/Mcc18.kicad_pcb
-Created on 03/06/2018 14:06:14
+Drill report for C:\GitZenite\MCC18\Hardware\Shunt_sensor\Cuk_converter\KiCad\Mcc18.kicad_pcb
+Created on 17/06/2018 22:52:02
 
 Copper Layer Stackup:
     =============================================================
@@ -10,18 +10,18 @@ Copper Layer Stackup:
 Drill file 'Mcc18.drl' contains
     plated through holes:
     =============================================================
-    T1  0,60mm  0,024"  (47 holes)
-    T2  0,70mm  0,028"  (5 holes)
-    T3  0,76mm  0,030"  (61 holes)
-    T4  1,00mm  0,039"  (2 holes)
-    T5  1,10mm  0,043"  (9 holes)
-    T6  1,20mm  0,047"  (14 holes)
-    T7  1,50mm  0,059"  (6 holes)
+    T1  0,60mm  0,024"  (29 holes)
+    T2  0,70mm  0,028"  (3 holes)
+    T3  0,76mm  0,030"  (17 holes)
+    T4  0,80mm  0,031"  (44 holes)
+    T5  1,00mm  0,039"  (5 holes)
+    T6  1,20mm  0,047"  (2 holes)
+    T7  1,50mm  0,059"  (24 holes)
     T8  2,20mm  0,087"  (4 holes)
     T9  3,00mm  0,118"  (4 holes)
     T10  5,00mm  0,197"  (4 holes)
 
-    Total plated holes count 156
+    Total plated holes count 136
 
 
 Not plated through holes are merged with plated holes
