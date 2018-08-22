@@ -1,4 +1,0 @@
-(sym_lib_table
-  (lib (name ZCS)(type Legacy)(uri ${KIPRJMOD}/MCC_bibliotecas/ZCS.lib)(options "")(descr ""))
-  (lib (name MCC18)(type Legacy)(uri ${KIPRJMOD}/MCC_bibliotecas/MCC18.lib)(options "")(descr ""))
-)
