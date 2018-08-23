@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name MCC18)(type Legacy)(uri ${KIPRJMOD}/MCC_bibliotecas/MCC18.lib)(options "")(descr ""))
+  (lib (name Signal-rescue)(type Legacy)(uri ${KIPRJMOD}/Signal-rescue.lib)(options "")(descr ""))
+)

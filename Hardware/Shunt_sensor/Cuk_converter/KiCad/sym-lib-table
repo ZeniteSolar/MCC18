@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name INA240)(type Legacy)(uri "C:/Users/perdo/Desktop/ZENITE/MCC18/Shunt definitivo/MCC_bibliotecas/INA240.lib")(options "")(descr ""))
+  (lib (name Mcc18-rescue)(type Legacy)(uri "C:/Users/perdo/Desktop/ZENITE/MCC18/Shunt definitivo/Mcc18-rescue.lib")(options "")(descr ""))
+  (lib (name MCC18)(type Legacy)(uri ${KIPRJMOD}/MCC_bibliotecas/MCC18.lib)(options "")(descr ""))
+)
