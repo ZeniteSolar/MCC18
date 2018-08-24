@@ -902,23 +902,23 @@ $EndComp
 $Comp
 L Device:C_Small Cs12
 U 1 1 5B89B76E
-P 4450 2800
-F 0 "Cs12" H 4550 2825 39  0000 L CNN
-F 1 "100nF" H 4550 2775 39  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 4450 2800 50  0001 C CNN
-F 3 "" H 4450 2800 50  0001 C CNN
-	1    4450 2800
+P 4450 2550
+F 0 "Cs12" H 4550 2575 39  0000 L CNN
+F 1 "100nF" H 4550 2525 39  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 4450 2550 50  0001 C CNN
+F 3 "" H 4450 2550 50  0001 C CNN
+	1    4450 2550
 	-1   0    0    -1  
 $EndComp
 $Comp
 L Device:R_Small Rs2
 U 1 1 5B89B82D
-P 4450 2550
-F 0 "Rs2" H 4509 2596 50  0000 L CNN
-F 1 "100" H 4509 2505 50  0000 L CNN
-F 2 "Resistor_SMD:R_2512_6332Metric_Pad1.52x3.35mm_HandSolder" H 4450 2550 50  0001 C CNN
-F 3 "" H 4450 2550 50  0001 C CNN
-	1    4450 2550
+P 4450 2800
+F 0 "Rs2" H 4509 2846 50  0000 L CNN
+F 1 "100" H 4509 2755 50  0000 L CNN
+F 2 "Resistor_SMD:R_2512_6332Metric_Pad1.52x3.35mm_HandSolder" H 4450 2800 50  0001 C CNN
+F 3 "" H 4450 2800 50  0001 C CNN
+	1    4450 2800
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1354,23 +1354,23 @@ $Comp
 L Device:L_Core_Iron_Small L1/2
 U 1 1 5B8A3F75
 P 5050 1650
-F 0 "L1/2" H 4800 1650 50  0000 L CNN
+F 0 "L1/2" H 5150 1650 50  0000 L CNN
 F 1 "L_Core_Iron_Small" H 5118 1605 50  0001 L CNN
 F 2 "MCCplaca:Inductor_Nocoupled" H 5050 1650 50  0001 C CNN
 F 3 "~" H 5050 1650 50  0001 C CNN
 	1    5050 1650
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:L_Core_Iron_Small L2/2
 U 1 1 5B8A41FB
 P 5350 1650
-F 0 "L2/2" H 5310 1650 50  0000 R CNN
+F 0 "L2/2" H 5600 1650 50  0000 R CNN
 F 1 "L_Core_Iron_Small" H 5309 1695 50  0001 R CNN
 F 2 "MCCplaca:Inductor_Nocoupled" H 5350 1650 50  0001 C CNN
 F 3 "~" H 5350 1650 50  0001 C CNN
 	1    5350 1650
-	-1   0    0    1   
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	5050 1550 5050 1400
