@@ -265,12 +265,12 @@ $EndComp
 Wire Wire Line
 	2350 5250 2350 5200
 $Comp
-L MCC18:Signals_MCC-MCC18-Mcc18-rescue-Mcc18-rescue-Mcc18-rescue-Mcc18-rescue U4
+L Signals:Signals U4
 U 1 1 5B191CBF
 P 4375 5250
 F 0 "U4" H 4194 5365 50  0000 C CNN
 F 1 "Signals_MCC" H 4194 5274 50  0000 C CNN
-F 2 "MCCplaca:Signals" H 4375 5250 50  0001 C CNN
+F 2 "MCCplaca:SignalsBarrapinos_SMD" H 4375 5250 50  0001 C CNN
 F 3 "" H 4375 5250 50  0001 C CNN
 	1    4375 5250
 	1    0    0    -1  
@@ -646,7 +646,7 @@ Wire Wire Line
 Wire Wire Line
 	1750 6800 1800 6800
 $Comp
-L MCC18:ZCS-ZCS-Mcc18-rescue U5
+L Mcc18-rescue:ZCS-ZCS-Mcc18-rescue-MCC18 U5
 U 1 1 5B16184F
 P 1300 5000
 F 0 "U5" H 1431 5165 50  0000 C CNN
