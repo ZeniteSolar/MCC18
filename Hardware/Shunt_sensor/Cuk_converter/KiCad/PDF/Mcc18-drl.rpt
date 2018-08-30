@@ -1,0 +1,34 @@
+Drill report for C:\Users\Aluno\Desktop\Zênite Solar\GitZenite2\MCC18\Hardware\Shunt_sensor\Cuk_converter\KiCad\Mcc18.kicad_pcb
+Created on 27/08/2018 22:47:04
+
+Copper Layer Stackup:
+    =============================================================
+    L1 :  F.Cu                      front
+    L2 :  B.Cu                      back
+
+
+Drill file 'Mcc18.drl' contains
+    plated through holes:
+    =============================================================
+    T1  0.60mm  0.024"  (36 holes)
+    T2  0.70mm  0.028"  (3 holes)
+    T3  0.80mm  0.031"  (44 holes)
+    T4  0.90mm  0.035"  (8 holes)
+    T5  1.00mm  0.039"  (19 holes)
+    T6  1.10mm  0.043"  (3 holes)
+    T7  1.50mm  0.059"  (6 holes)
+    T8  1.52mm  0.060"  (2 holes)
+    T9  2.00mm  0.079"  (4 holes)
+    T10  2.20mm  0.087"  (4 holes)
+    T11  5.00mm  0.197"  (4 holes)
+
+    Total plated holes count 133
+
+
+Not plated through holes are merged with plated holes
+    unplated through holes:
+    =============================================================
+    T12  3.50mm  0.138"  (1 hole)
+    T13  3.60mm  0.142"  (2 holes)
+
+    Total unplated holes count 3

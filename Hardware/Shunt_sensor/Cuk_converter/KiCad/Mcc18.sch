@@ -36,18 +36,6 @@ F 3 "https://www.infineon.com/dgdl/irfp4321pbf.pdf?fileId=5546d462533600a4015356
 	1    6350 2700
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	6700 2700 6600 2700
-Wire Wire Line
-	6600 2700 6600 2650
-Connection ~ 6600 2700
-Wire Wire Line
-	6600 2700 6550 2700
-Wire Wire Line
-	6600 2450 6600 2400
-Wire Wire Line
-	6600 2400 6650 2400
-Connection ~ 6600 2400
 $Comp
 L Mechanical:MountingHole_Pad Screw1
 U 1 1 5B0387A2
@@ -100,20 +88,20 @@ U 1 1 5B0E871D
 P 10500 3275
 F 0 "U2" H 10500 3400 47  0000 L CNN
 F 1 "DRIVER_(INEP)" H 10500 3325 47  0000 L CNN
-F 2 "MCCplaca:Driver_(INEP)_SMD" H 10500 3275 47  0001 C CNN
+F 2 "MCCplaca:Driver_(INEP)" H 10500 3275 47  0001 C CNN
 F 3 "" H 10500 3275 47  0001 C CNN
 	1    10500 3275
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10150 3825 10400 3825
+	10150 3825 10175 3825
 $Comp
 L Regulator_Linear:LM7812_TO220 U3
 U 1 1 5B109C61
 P 9675 1300
 F 0 "U3" H 9675 1542 50  0000 C CNN
 F 1 "LM7812_TO220" H 9675 1451 50  0000 C CNN
-F 2 "MCCplaca:TO-220-3_Horizontal_TabDown_SMD" H 9675 1525 50  0001 C CIN
+F 2 "MCCplaca:TO-220-3_Horizontal_TabDown" H 9675 1525 50  0001 C CIN
 F 3 "" H 9675 1250 50  0001 C CNN
 	1    9675 1300
 	1    0    0    -1  
@@ -265,12 +253,12 @@ $EndComp
 Wire Wire Line
 	2350 5250 2350 5200
 $Comp
-L Signals:Signals U4
+L MCC18:Signals_MCC-MCC18-Mcc18-rescue-Mcc18-rescue-Mcc18-rescue-Mcc18-rescue U4
 U 1 1 5B191CBF
 P 4375 5250
 F 0 "U4" H 4194 5365 50  0000 C CNN
 F 1 "Signals_MCC" H 4194 5274 50  0000 C CNN
-F 2 "MCCplaca:SignalsBarrapinos_SMD" H 4375 5250 50  0001 C CNN
+F 2 "MCCplaca:SignalsBarrapinosGrande" H 4375 5250 50  0001 C CNN
 F 3 "" H 4375 5250 50  0001 C CNN
 	1    4375 5250
 	1    0    0    -1  
@@ -314,8 +302,6 @@ F 3 "" H 1900 5950 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	4050 3500 4050 4350
-Wire Wire Line
 	4050 3500 4100 3500
 Connection ~ 6250 3500
 Wire Wire Line
@@ -327,7 +313,7 @@ U 1 1 5B2B235B
 P 4100 2650
 F 0 "D1" V 3950 2700 50  0000 L CNN
 F 1 "80CPQ150PbF" V 4100 2700 50  0000 L CNN
-F 2 "MCCplaca:TO-247-3_Horizontal_TabUp" H 4100 2650 50  0001 C CNN
+F 2 "Package_TO_SOT_THT:TO-247-3_Horizontal_TabUp" H 4100 2650 50  0001 C CNN
 F 3 "https://www.vishay.com/docs/94257/vs-80cpq150.pdf" H 4100 2650 50  0001 C CNN
 	1    4100 2650
 	0    -1   1    0   
@@ -340,7 +326,7 @@ U 1 1 5B5E2923
 P 9200 3725
 F 0 "L3" V 9300 3725 39  0000 C CNN
 F 1 "L_Small" V 9250 3725 39  0000 C CNN
-F 2 "Inductor_SMD:L_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9200 3725 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 9200 3725 50  0001 C CNN
 F 3 "~" H 9200 3725 50  0001 C CNN
 	1    9200 3725
 	0    -1   -1   0   
@@ -453,7 +439,7 @@ F 3 "" H 4925 7000 50  0001 C CNN
 	1    4925 7000
 	0    -1   -1   0   
 $EndComp
-Text Label 7950 4550 1    25   ~ 0
+Text Label 8000 4525 2    25   ~ 0
 -P_unfused
 $Comp
 L power:PWR_FLAG #FLG0102
@@ -543,13 +529,13 @@ Text Label 2675 3500 1    50   ~ 0
 Text Label 10150 3825 0    47   ~ 0
 PWM
 Text Label 10150 3425 0    50   ~ 0
-HS
+Source
 Text Label 10150 3325 0    50   ~ 0
-HG
+Gate
 Text Label 6650 2400 2    50   ~ 0
-HS
+Source
 Text Label 6700 2700 2    50   ~ 0
-HG
+Gate
 Text Label 2200 5050 2    39   ~ 0
 +18V_OUT
 Text Label 2425 5500 2    39   ~ 0
@@ -576,7 +562,6 @@ NoConn ~ 1750 5750
 NoConn ~ 1750 5700
 NoConn ~ 1750 5650
 NoConn ~ 1750 5600
-NoConn ~ 1750 5550
 Text Label 2200 7225 2    39   ~ 0
 Vpanel_adc-
 Text Label 2200 7275 2    39   ~ 0
@@ -646,12 +631,12 @@ Wire Wire Line
 Wire Wire Line
 	1750 6800 1800 6800
 $Comp
-L Mcc18-rescue:ZCS-ZCS-Mcc18-rescue-MCC18 U5
+L MCC18:ZCS-ZCS-Mcc18-rescue U5
 U 1 1 5B16184F
 P 1300 5000
 F 0 "U5" H 1431 5165 50  0000 C CNN
 F 1 "ZCS" H 1431 5074 50  0000 C CNN
-F 2 "MCCplaca:ZCS18" H 1300 5000 50  0001 C CNN
+F 2 "MCCplaca:ZCS18_Handsoldering" H 1300 5000 50  0001 C CNN
 F 3 "" H 1300 5000 50  0001 C CNN
 	1    1300 5000
 	1    0    0    -1  
@@ -729,7 +714,7 @@ U 1 1 5B4A6175
 P 8000 3900
 F 0 "Rshunt1" H 8070 3946 50  0000 L CNN
 F 1 "1500uR" H 8070 3855 50  0000 L CNN
-F 2 "MCCplaca Shunt:PML100HZPJV0L5" V 7930 3900 50  0001 C CNN
+F 2 "MCCplaca:PML100HZPJV0L5" V 7930 3900 50  0001 C CNN
 F 3 "~" H 8000 3900 50  0001 C CNN
 	1    8000 3900
 	1    0    0    -1  
@@ -743,7 +728,7 @@ Wire Notes Line
 Text Notes 10450 6325 0    39   ~ 0
 Current Sensor\n
 $Comp
-L INA240:INA240-ina240_soic8-Mcc18-rescue-Mcc18-rescue-Mcc18-rescue U1
+L Mcc18-rescue:INA240-ina240_soic8-Mcc18-rescue-Mcc18-rescue-Mcc18-rescue-Mcc18-rescue U1
 U 1 1 5B114902
 P 7725 5700
 F 0 "U1" H 7950 5781 60  0000 C CNN
@@ -775,23 +760,12 @@ Ip_sen+
 Wire Wire Line
 	2200 7100 2200 7350
 $Comp
-L power:GNDA #PWR0120
-U 1 1 5B808DD3
-P 2950 7300
-F 0 "#PWR0120" H 2950 7050 39  0001 C CNN
-F 1 "GNDA" H 2955 7127 50  0000 C CNN
-F 2 "" H 2950 7300 50  0001 C CNN
-F 3 "" H 2950 7300 50  0001 C CNN
-	1    2950 7300
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C_Small C1
 U 1 1 5B808F00
 P 2950 7050
 F 0 "C1" H 2858 7088 39  0000 R CNN
 F 1 "1uF" H 2858 7013 39  0000 R CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2950 7050 50  0001 C CNN
+F 2 "Capacitor_SMD:C_2512_6332Metric_Pad1.52x3.35mm_HandSolder" H 2950 7050 50  0001 C CNN
 F 3 "" H 2950 7050 50  0001 C CNN
 	1    2950 7050
 	-1   0    0    -1  
@@ -875,8 +849,6 @@ Wire Notes Line
 	4200 2300 4200 3100
 Wire Notes Line
 	6150 2300 6150 3100
-Wire Wire Line
-	4100 2850 4100 3125
 $Comp
 L Device:R_Small Rs5
 U 1 1 5B89B59F
@@ -1200,8 +1172,8 @@ L Connector:TestPoint_Probe TP3
 U 1 1 5B7E01CA
 P 1800 6800
 F 0 "TP3" H 1950 6950 50  0000 L CNN
-F 1 "TestPoint_Probe" H 1953 6811 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 2000 6800 50  0001 C CNN
+F 1 "TP" H 1953 6811 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_2.0x2.0mm" H 2000 6800 50  0001 C CNN
 F 3 "~" H 2000 6800 50  0001 C CNN
 	1    1800 6800
 	1    0    0    -1  
@@ -1214,8 +1186,8 @@ L Connector:TestPoint_Probe TP4
 U 1 1 5B7E0652
 P 1850 6850
 F 0 "TP4" H 2000 7000 50  0000 L CNN
-F 1 "TestPoint_Probe" H 2003 6861 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 2050 6850 50  0001 C CNN
+F 1 "TP" H 2003 6861 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_2.0x2.0mm" H 2050 6850 50  0001 C CNN
 F 3 "~" H 2050 6850 50  0001 C CNN
 	1    1850 6850
 	1    0    0    -1  
@@ -1228,8 +1200,8 @@ L Connector:TestPoint_Probe TP5
 U 1 1 5B7E06F4
 P 1900 6900
 F 0 "TP5" H 1950 6850 50  0000 L CNN
-F 1 "TestPoint_Probe" H 2053 6911 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 2100 6900 50  0001 C CNN
+F 1 "TP" H 2053 6911 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_2.0x2.0mm" H 2100 6900 50  0001 C CNN
 F 3 "~" H 2100 6900 50  0001 C CNN
 	1    1900 6900
 	1    0    0    -1  
@@ -1242,8 +1214,8 @@ L Connector:TestPoint_Probe TP1
 U 1 1 5B7E18A6
 P 4550 6350
 F 0 "TP1" H 4700 6500 50  0000 L CNN
-F 1 "TestPoint_Probe" H 4703 6361 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 4750 6350 50  0001 C CNN
+F 1 "TP" H 4703 6361 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_2.0x2.0mm" H 4750 6350 50  0001 C CNN
 F 3 "~" H 4750 6350 50  0001 C CNN
 	1    4550 6350
 	1    0    0    -1  
@@ -1254,8 +1226,8 @@ L Connector:TestPoint_Probe TP2
 U 1 1 5B7E197A
 P 4550 6450
 F 0 "TP2" H 4700 6400 50  0000 L CNN
-F 1 "TestPoint_Probe" H 4850 6750 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 4750 6450 50  0001 C CNN
+F 1 "TP" H 4850 6750 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_2.0x2.0mm" H 4750 6450 50  0001 C CNN
 F 3 "~" H 4750 6450 50  0001 C CNN
 	1    4550 6450
 	1    0    0    -1  
@@ -1265,8 +1237,8 @@ L Connector:TestPoint_Probe TP8
 U 1 1 5B7E1A40
 P 4550 5350
 F 0 "TP8" H 4700 5450 50  0000 L CNN
-F 1 "TestPoint_Probe" H 4703 5361 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 4750 5350 50  0001 C CNN
+F 1 "TP" H 4703 5361 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_2.0x2.0mm" H 4750 5350 50  0001 C CNN
 F 3 "~" H 4750 5350 50  0001 C CNN
 	1    4550 5350
 	1    0    0    -1  
@@ -1279,8 +1251,8 @@ L Connector:TestPoint_Probe TP9
 U 1 1 5B7E1B66
 P 4550 5450
 F 0 "TP9" H 4600 5400 50  0000 L CNN
-F 1 "TestPoint_Probe" H 4703 5461 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 4750 5450 50  0001 C CNN
+F 1 "TP" H 4703 5461 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_2.0x2.0mm" H 4750 5450 50  0001 C CNN
 F 3 "~" H 4750 5450 50  0001 C CNN
 	1    4550 5450
 	1    0    0    -1  
@@ -1296,8 +1268,8 @@ L Connector:TestPoint_Probe TP11
 U 1 1 5B7E5A76
 P 6650 2400
 F 0 "TP11" H 6803 2456 50  0000 L CNN
-F 1 "TestPoint_Probe" H 6803 2411 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 6850 2400 50  0001 C CNN
+F 1 "TP" H 6803 2411 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_2.0x2.0mm" H 6850 2400 50  0001 C CNN
 F 3 "~" H 6850 2400 50  0001 C CNN
 	1    6650 2400
 	1    0    0    -1  
@@ -1307,8 +1279,8 @@ L Connector:TestPoint_Probe TP10
 U 1 1 5B7E6E10
 P 6250 3200
 F 0 "TP10" H 6403 3256 50  0000 L CNN
-F 1 "TestPoint_Probe" H 6403 3211 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 6450 3200 50  0001 C CNN
+F 1 "TP" H 6403 3211 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_2.0x2.0mm" H 6450 3200 50  0001 C CNN
 F 3 "~" H 6450 3200 50  0001 C CNN
 	1    6250 3200
 	1    0    0    -1  
@@ -1318,8 +1290,8 @@ L Connector:TestPoint_Probe TP12
 U 1 1 5B7E6F8A
 P 6700 2700
 F 0 "TP12" H 6853 2756 50  0000 L CNN
-F 1 "TestPoint_Probe" H 6853 2711 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 6900 2700 50  0001 C CNN
+F 1 "TP" H 6853 2711 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_2.0x2.0mm" H 6900 2700 50  0001 C CNN
 F 3 "~" H 6900 2700 50  0001 C CNN
 	1    6700 2700
 	1    0    0    -1  
@@ -1331,8 +1303,8 @@ L Connector:TestPoint_Probe TP6
 U 1 1 5B7E7BA0
 P 4100 2350
 F 0 "TP6" H 3950 2400 50  0000 L CNN
-F 1 "TestPoint_Probe" H 4253 2361 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 4300 2350 50  0001 C CNN
+F 1 "TP" H 4253 2361 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_2.0x2.0mm" H 4300 2350 50  0001 C CNN
 F 3 "~" H 4300 2350 50  0001 C CNN
 	1    4100 2350
 	1    0    0    -1  
@@ -1342,14 +1314,12 @@ L Connector:TestPoint_Probe TP7
 U 1 1 5B7E7CB5
 P 4100 2850
 F 0 "TP7" H 4200 3050 50  0000 R CNN
-F 1 "TestPoint_Probe" H 4059 2951 50  0001 R CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 4300 2850 50  0001 C CNN
+F 1 "TP" H 4059 2951 50  0001 R CNN
+F 2 "TestPoint:TestPoint_Pad_2.0x2.0mm" H 4300 2850 50  0001 C CNN
 F 3 "~" H 4300 2850 50  0001 C CNN
 	1    4100 2850
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	6250 2400 6600 2400
 $Comp
 L Device:L_Core_Iron_Small L1/2
 U 1 1 5B8A3F75
@@ -1868,11 +1838,6 @@ Wire Wire Line
 Wire Wire Line
 	7925 5850 7925 5950
 Wire Wire Line
-	7575 6050 7575 5950
-Connection ~ 7575 5950
-Wire Wire Line
-	7925 5950 7575 5950
-Wire Wire Line
 	8325 5850 7925 5850
 Wire Wire Line
 	8325 5950 8450 5950
@@ -1891,83 +1856,8 @@ F 3 "" H 7575 6050 50  0001 C CNN
 $EndComp
 Text Label 4100 2950 0    39   ~ 0
 LS
-$Comp
-L Device:Jumper_NC_Small JP1
-U 1 1 5BA70A29
-P 4000 3125
-F 0 "JP1" H 4000 3000 39  0000 C CNN
-F 1 "Diode On" H 3800 2925 39  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 4000 3125 50  0001 C CNN
-F 3 "~" H 4000 3125 50  0001 C CNN
-	1    4000 3125
-	1    0    0    -1  
-$EndComp
-Connection ~ 4100 3125
-Wire Wire Line
-	4100 3125 4100 3200
-Text Label 3650 2850 2    39   ~ 0
-LG
-Wire Wire Line
-	3900 3125 3900 2850
-Wire Wire Line
-	3900 2850 4000 2850
-$Comp
-L Device:Jumper_NC_Small JP2
-U 1 1 5BA89FBB
-P 3800 2850
-F 0 "JP2" H 3550 2700 50  0000 C CNN
-F 1 "MosfetOn" H 3550 2775 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 3800 2850 50  0001 C CNN
-F 3 "~" H 3800 2850 50  0001 C CNN
-	1    3800 2850
-	1    0    0    -1  
-$EndComp
-Connection ~ 3900 2850
-Wire Wire Line
-	3650 2850 3700 2850
-$Comp
-L Device:Jumper_NC_Small JP3
-U 1 1 5BAA4D53
-P 4000 3200
-F 0 "JP3" H 4000 3075 39  0000 C CNN
-F 1 "Diode On" H 3800 3150 39  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 4000 3200 50  0001 C CNN
-F 3 "~" H 4000 3200 50  0001 C CNN
-	1    4000 3200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3900 3200 3900 3125
-Connection ~ 3900 3125
-Text Label 10150 3525 0    50   ~ 0
-LG
-Text Label 10150 3625 0    50   ~ 0
-LS
 Text Notes 4400 2300 0    39   ~ 0
 Arrumar footprint snubber\n
-$Comp
-L Device:R_Small Rg2
-U 1 1 5B7F82B4
-P 10000 3575
-F 0 "Rg2" H 10059 3621 50  0000 L CNN
-F 1 "10k" H 10059 3530 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 10000 3575 50  0001 C CNN
-F 3 "" H 10000 3575 50  0001 C CNN
-	1    10000 3575
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	10000 3475 10100 3475
-Wire Wire Line
-	10100 3475 10100 3525
-Wire Wire Line
-	10100 3525 10400 3525
-Wire Wire Line
-	10000 3675 10100 3675
-Wire Wire Line
-	10100 3675 10100 3625
-Wire Wire Line
-	10100 3625 10400 3625
 $Comp
 L Device:R_Small Rg1
 U 1 1 5B82B53F
@@ -2005,34 +1895,10 @@ Wire Wire Line
 	8100 3750 8100 3650
 Wire Wire Line
 	8325 3750 8100 3750
-Connection ~ 7575 6050
-$Comp
-L power:GND #PWR0126
-U 1 1 5B86C931
-P 7400 6050
-F 0 "#PWR0126" H 7400 5800 50  0001 C CNN
-F 1 "GND" H 7405 5877 50  0000 C CNN
-F 2 "" H 7400 6050 50  0001 C CNN
-F 3 "" H 7400 6050 50  0001 C CNN
-	1    7400 6050
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	7400 6050 7400 5850
+	7400 6050 7400 5950
 Wire Wire Line
 	7400 5850 7575 5850
-$Comp
-L power:GND #PWR0102
-U 1 1 5B8BA1C6
-P 8250 5400
-F 0 "#PWR0102" H 8250 5150 50  0001 C CNN
-F 1 "GND" H 8255 5227 50  0000 C CNN
-F 2 "" H 8250 5400 50  0001 C CNN
-F 3 "" H 8250 5400 50  0001 C CNN
-	1    8250 5400
-	1    0    0    -1  
-$EndComp
-Connection ~ 8250 5400
 Wire Wire Line
 	2950 7225 3350 7225
 Wire Wire Line
@@ -2040,25 +1906,14 @@ Wire Wire Line
 Wire Wire Line
 	9250 4950 9250 6050
 $Comp
-L power:GND #PWR0123
-U 1 1 5B8BAB12
+L power:GND #PWR0122
+U 1 1 5B8BAA4B
 P 6075 7550
-F 0 "#PWR0123" H 6075 7300 50  0001 C CNN
+F 0 "#PWR0122" H 6075 7300 50  0001 C CNN
 F 1 "GND" H 6080 7377 50  0000 C CNN
 F 2 "" H 6075 7550 50  0001 C CNN
 F 3 "" H 6075 7550 50  0001 C CNN
 	1    6075 7550
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0122
-U 1 1 5B8BAA4B
-P 5675 7550
-F 0 "#PWR0122" H 5675 7300 50  0001 C CNN
-F 1 "GND" H 5680 7377 50  0000 C CNN
-F 2 "" H 5675 7550 50  0001 C CNN
-F 3 "" H 5675 7550 50  0001 C CNN
-	1    5675 7550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -2082,7 +1937,7 @@ U 1 1 5B293670
 P 5875 7100
 F 0 "L1" V 5975 7100 39  0000 C CNN
 F 1 "L_Small" V 5925 7100 39  0000 C CNN
-F 2 "Inductor_SMD:L_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5875 7100 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 5875 7100 50  0001 C CNN
 F 3 "~" H 5875 7100 50  0001 C CNN
 	1    5875 7100
 	0    -1   -1   0   
@@ -2158,4 +2013,166 @@ Wire Wire Line
 	5975 6550 6350 6550
 Wire Wire Line
 	5500 6550 5700 6550
+Wire Wire Line
+	1750 5400 1750 5350
+Connection ~ 1750 5350
+Wire Wire Line
+	1750 5300 1750 5350
+Wire Wire Line
+	1750 5200 1750 5150
+Connection ~ 1750 5150
+Wire Wire Line
+	1750 5150 1750 5100
+Wire Wire Line
+	4100 2850 4100 3200
+Wire Wire Line
+	4000 2850 4100 2850
+Wire Wire Line
+	6250 2400 6650 2400
+Wire Wire Line
+	6550 2700 6700 2700
+Wire Wire Line
+	4050 3500 4050 4350
+$Comp
+L Device:Jumper_NC_Small JP1
+U 1 1 5B9300A3
+P 6350 6650
+F 0 "JP1" H 6350 6525 39  0000 C CNN
+F 1 "VBat-Sen" H 6325 6575 39  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 6350 6650 50  0001 C CNN
+F 3 "~" H 6350 6650 50  0001 C CNN
+	1    6350 6650
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0107
+U 1 1 5B9302C4
+P 6350 6750
+F 0 "#PWR0107" H 6350 6500 50  0001 C CNN
+F 1 "GND" H 6355 6577 50  0000 C CNN
+F 2 "" H 6350 6750 50  0001 C CNN
+F 3 "" H 6350 6750 50  0001 C CNN
+	1    6350 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR0120
+U 1 1 5B808DD3
+P 2950 7300
+F 0 "#PWR0120" H 2950 7050 39  0001 C CNN
+F 1 "GNDA" H 2955 7127 50  0000 C CNN
+F 2 "" H 2950 7300 50  0001 C CNN
+F 3 "" H 2950 7300 50  0001 C CNN
+	1    2950 7300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR0108
+U 1 1 5B931FEC
+P 5675 7550
+F 0 "#PWR0108" H 5675 7300 39  0001 C CNN
+F 1 "GNDA" H 5775 7375 50  0000 R CNN
+F 2 "" H 5675 7550 50  0001 C CNN
+F 3 "" H 5675 7550 50  0001 C CNN
+	1    5675 7550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR0102
+U 1 1 5B9492CB
+P 8250 5400
+F 0 "#PWR0102" H 8250 5150 50  0001 C CNN
+F 1 "GNDA" H 8400 5350 50  0000 C CNN
+F 2 "" H 8250 5400 50  0001 C CNN
+F 3 "" H 8250 5400 50  0001 C CNN
+	1    8250 5400
+	-1   0    0    -1  
+$EndComp
+Connection ~ 8250 5400
+$Comp
+L power:GNDA #PWR0114
+U 1 1 5B94AA20
+P 7400 6050
+F 0 "#PWR0114" H 7400 5800 50  0001 C CNN
+F 1 "GNDA" H 7405 5877 50  0000 C CNN
+F 2 "" H 7400 6050 50  0001 C CNN
+F 3 "" H 7400 6050 50  0001 C CNN
+	1    7400 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 5950 7575 5950
+Connection ~ 7400 5950
+Wire Wire Line
+	7400 5950 7400 5850
+Connection ~ 7575 5950
+Wire Wire Line
+	7575 5950 7925 5950
+$Comp
+L power:GND #PWR0115
+U 1 1 5B99177D
+P 10300 3625
+F 0 "#PWR0115" H 10300 3375 50  0001 C CNN
+F 1 "GND" H 10305 3452 50  0000 C CNN
+F 2 "" H 10300 3625 50  0001 C CNN
+F 3 "" H 10300 3625 50  0001 C CNN
+	1    10300 3625
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10300 3625 10400 3625
+$Comp
+L Connector:TestPoint_Probe TP13
+U 1 1 5B862EAD
+P 8450 5950
+F 0 "TP13" H 8600 6050 50  0000 L CNN
+F 1 "TP" H 8603 5961 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_2.0x2.0mm" H 8650 5950 50  0001 C CNN
+F 3 "~" H 8650 5950 50  0001 C CNN
+	1    8450 5950
+	1    0    0    -1  
+$EndComp
+Connection ~ 8450 5950
+$Comp
+L Device:Jumper_NC_Small JP5
+U 1 1 5B867815
+P 2175 5550
+F 0 "JP5" H 2175 5700 39  0000 C CNN
+F 1 "ON/OFF" H 2150 5625 39  0000 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 2175 5550 50  0001 C CNN
+F 3 "~" H 2175 5550 50  0001 C CNN
+	1    2175 5550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2075 5550 1750 5550
+$Comp
+L power:GND #PWR0123
+U 1 1 5B87DA83
+P 2400 5625
+F 0 "#PWR0123" H 2400 5375 50  0001 C CNN
+F 1 "GND" H 2600 5625 50  0000 R CNN
+F 2 "" H 2400 5625 50  0001 C CNN
+F 3 "" H 2400 5625 50  0001 C CNN
+	1    2400 5625
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 5625 2400 5550
+Wire Wire Line
+	2400 5550 2275 5550
+$Comp
+L Connector:TestPoint_Probe TP14
+U 1 1 5B876E70
+P 10175 3825
+F 0 "TP14" H 10325 3925 50  0000 L CNN
+F 1 "TP" H 10328 3836 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_2.0x2.0mm" H 10375 3825 50  0001 C CNN
+F 3 "~" H 10375 3825 50  0001 C CNN
+	1    10175 3825
+	-1   0    0    1   
+$EndComp
+Connection ~ 10175 3825
+Wire Wire Line
+	10175 3825 10400 3825
 $EndSCHEMATC
