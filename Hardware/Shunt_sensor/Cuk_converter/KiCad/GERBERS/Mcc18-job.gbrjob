@@ -5,9 +5,9 @@
     {
       "Vendor":      "KiCad",
       "Application": "Pcbnew",
-      "Version":     "(5.0.0-rc2-dev-586-g888c43477)"
+      "Version":     "5.0.0"
     },
-    "CreationDate":  "2018-08-28T22:07:21-03:00"
+    "CreationDate":  "2018-08-30T21:38:31-03:00"
   },
   "GeneralSpecs":
   {
@@ -59,16 +59,16 @@
   [
     {
       "Type":  "Copper",
-      "S_Notes":  "Layer F.Cu"
+      "Notes":  "Layer F.Cu"
     },
     {
       "Type":  "Dielectric",
       "Material":  "FR4",
-      "S_Notes":  "Layers L1/L2"
+      "Notes":  "Layers L1/L2"
     },
     {
       "Type":  "Copper",
-      "S_Notes":  "Layer B.Cu"
+      "Notes":  "Layer B.Cu"
     }
   ]
 }
