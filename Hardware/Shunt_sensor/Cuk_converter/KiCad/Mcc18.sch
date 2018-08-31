@@ -728,7 +728,7 @@ Wire Notes Line
 Text Notes 10450 6325 0    39   ~ 0
 Current Sensor\n
 $Comp
-L Mcc18-rescue:INA240-ina240_soic8-Mcc18-rescue-Mcc18-rescue-Mcc18-rescue-Mcc18-rescue U1
+L Mcc18-rescue:INA240-ina240_soic8-Mcc18-rescue-Mcc18-rescue-Mcc18-rescue-Mcc18-rescue-Mcc18-rescue U1
 U 1 1 5B114902
 P 7725 5700
 F 0 "U1" H 7950 5781 60  0000 C CNN
