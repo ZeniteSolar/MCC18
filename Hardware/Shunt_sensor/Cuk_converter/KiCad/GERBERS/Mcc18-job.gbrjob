@@ -7,7 +7,7 @@
       "Application": "Pcbnew",
       "Version":     "(5.0.0-rc2-dev-586-g888c43477)"
     },
-    "CreationDate":  "2018-06-04T00:08:36-03:00"
+    "CreationDate":  "2018-08-31T13:20:26-03:00"
   },
   "GeneralSpecs":
   {
@@ -20,7 +20,7 @@
     "Size":
     {
       "X": 199.286,
-      "Y": 118.514
+      "Y": 127.658
     },
     "LayerNumber": 2,
     "BoardThickness":  1.600
@@ -32,7 +32,7 @@
       "PadToPad":  0.000,
       "PadToTrack":  0.000,
       "TrackToTrack":  0.305,
-      "MinLineWidth":  0.343,
+      "MinLineWidth":  0.508,
       "TrackToRegion":  0.305,
       "RegionToRegion":  0.305
     }
@@ -50,75 +50,13 @@
       "FilePolarity":  "Positive"
     },
     {
-      "Path":  "Mcc18-F.Adhes.gbr",
-      "FileFunction":  "Glue,Top",
-      "FilePolarity":  "Positive"
-    },
-    {
-      "Path":  "Mcc18-B.Adhes.gbr",
-      "FileFunction":  "Glue,Bot",
-      "FilePolarity":  "Positive"
-    },
-    {
-      "Path":  "Mcc18-F.Paste.gbr",
-      "FileFunction":  "SolderPaste,Top",
-      "FilePolarity":  "Positive"
-    },
-    {
-      "Path":  "Mcc18-B.Paste.gbr",
-      "FileFunction":  "SolderPaste,Bot",
-      "FilePolarity":  "Positive"
-    },
-    {
-      "Path":  "Mcc18-F.SilkS.gbr",
-      "FileFunction":  "Legend,Top",
-      "FilePolarity":  "Positive"
-    },
-    {
-      "Path":  "Mcc18-B.SilkS.gbr",
-      "FileFunction":  "Legend,Bot",
-      "FilePolarity":  "Positive"
-    },
-    {
-      "Path":  "Mcc18-F.Mask.gbr",
-      "FileFunction":  "SolderMask,Top",
-      "FilePolarity":  "Negative"
-    },
-    {
-      "Path":  "Mcc18-B.Mask.gbr",
-      "FileFunction":  "SolderMask,Bot",
-      "FilePolarity":  "Negative"
-    },
-    {
       "Path":  "Mcc18-Edge.Cuts.gbr",
       "FileFunction":  "Profile",
-      "FilePolarity":  "Positive"
-    },
-    {
-      "Path":  "Mcc18-F.Fab.gbr",
-      "FileFunction":  "AssemblyDrawing,Top",
-      "FilePolarity":  "Positive"
-    },
-    {
-      "Path":  "Mcc18-B.Fab.gbr",
-      "FileFunction":  "AssemblyDrawing,Bot",
       "FilePolarity":  "Positive"
     }
   ],
   "MaterialStackup":
   [
-    {
-      "Type":  "Legend",
-      "S_Notes":  "Layer F.SilkS"
-    },
-    {
-      "Type":  "SolderPaste",
-      "S_Notes":  "Layer F.Paste"
-    },
-    {
-      "Type":  "SolderMask",
-      "S_Notes":  "Layer F.Mask"
-    },
     {
       "Type":  "Copper",
       "S_Notes":  "Layer F.Cu"
@@ -131,18 +69,6 @@
     {
       "Type":  "Copper",
       "S_Notes":  "Layer B.Cu"
-    },
-    {
-      "Type":  "SolderMask",
-      "S_Notes":  "Layer B.Mask"
-    },
-    {
-      "Type":  "SolderPaste",
-      "S_Notes":  "Layer B.Paste"
-    },
-    {
-      "Type":  "Legend",
-      "S_Notes":  "Layer B.SilkS"
     }
   ]
 }

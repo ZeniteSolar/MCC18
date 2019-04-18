@@ -1,21 +1,21 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# Device:C
+# Connector:TestPoint_Probe
 #
-DEF Device:C C 0 10 N Y 1 F N
-F0 "C" 25 100 50 H V L CNN
-F1 "Device:C" 25 -100 50 H V L CNN
-F2 "" 38 -150 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
+DEF Connector:TestPoint_Probe TP 0 30 N N 1 F N
+F0 "TP" 65 230 50 H V C CNN
+F1 "Connector:TestPoint_Probe" 65 160 50 H V C CNN
+F2 "" 200 0 50 H I C CNN
+F3 "" 200 0 50 H I C CNN
 $FPLIST
- *:C_*
+ Pin*
+ Test*
 $ENDFPLIST
 DRAW
-P 2 0 1 20 -80 -30 80 -30 N
-P 2 0 1 20 -80 30 80 30 N
-X ~ 1 0 150 110 D 50 50 1 1 P
-X ~ 2 0 -150 110 U 50 50 1 1 P
+P 4 0 1 0 50 30 0 0 30 50 50 30 F
+P 5 0 1 0 55 25 25 55 95 125 125 95 55 25 f
+X 1 1 0 0 0 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
@@ -27,7 +27,7 @@ F1 "Device:CP1_Small" 10 -80 50 H V L CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
- *:CP_*
+ CP_*
 $ENDFPLIST
 DRAW
 A 0 -140 125 1186 614 0 1 12 N -60 -30 60 -30
@@ -47,7 +47,7 @@ F1 "Device:C_Small" 10 -80 50 H V L CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
- *:C_*
+ C_*
 $ENDFPLIST
 DRAW
 P 2 0 1 13 -60 -20 60 -20 N
@@ -66,10 +66,9 @@ F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
  TO-???*
- *SingleDiode
  *_Diode_*
  *SingleDiode*
- *:D_*
+ D_*
 $ENDFPLIST
 DRAW
 P 4 0 1 8 50 50 50 -50 -50 0 50 50 N
@@ -90,10 +89,9 @@ F2 "" 0 0 50 V I C CNN
 F3 "" 0 0 50 V I C CNN
 $FPLIST
  TO-???*
- *SingleDiode
  *_Diode_*
  *SingleDiode*
- *:D_*
+ D_*
 $ENDFPLIST
 DRAW
 P 2 0 1 0 -30 -40 -30 40 N
@@ -101,6 +99,29 @@ P 2 0 1 0 -30 0 30 0 N
 P 4 0 1 0 30 -40 -30 0 30 40 30 -40 N
 X K 1 -100 0 70 R 50 50 1 1 P
 X A 2 100 0 70 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device:D_TVS_ALT
+#
+DEF Device:D_TVS_ALT D 0 40 N N 1 F N
+F0 "D" 0 100 50 H V C CNN
+F1 "Device:D_TVS_ALT" 0 -100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ TO-???*
+ *_Diode_*
+ *SingleDiode*
+ D_*
+$ENDFPLIST
+DRAW
+P 2 0 1 0 50 0 -50 0 N
+P 4 0 1 8 -100 -50 0 0 -100 50 -100 -50 F
+P 4 0 1 8 20 50 0 50 0 -50 -20 -50 N
+P 4 0 1 8 100 50 100 -50 0 0 100 50 F
+X A1 1 -150 0 100 R 50 50 1 1 P
+X A2 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
@@ -122,42 +143,44 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:L_Core_Iron_Coupled
+# Device:Jumper_NC_Small
 #
-DEF Device:L_Core_Iron_Coupled L 0 10 Y N 1 F N
-F0 "L" 0 175 50 H V C CNN
-F1 "Device:L_Core_Iron_Coupled" 0 -175 50 H V C CNN
+DEF Device:Jumper_NC_Small JP 0 30 N N 1 F N
+F0 "JP" 0 80 50 H V C CNN
+F1 "Device:Jumper_NC_Small" 10 -60 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+A 0 -10 57 450 1350 0 1 0 N 40 30 -40 30
+C -40 0 20 0 1 0 N
+C 40 0 20 0 1 0 N
+X 1 1 -100 0 40 R 50 50 0 1 P
+X 2 2 100 0 40 L 50 50 0 1 P
+ENDDRAW
+ENDDEF
+#
+# Device:L_Core_Iron_Small
+#
+DEF Device:L_Core_Iron_Small L 0 10 N N 1 F N
+F0 "L" 50 40 50 H V L CNN
+F1 "Device:L_Core_Iron_Small" 50 -50 50 H V L CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
  Choke_*
  *Coil*
  Inductor_*
- *:L_*
+ L_*
 $ENDFPLIST
 DRAW
-A -80 -80 20 1 1799 0 1 0 N -60 -80 -100 -80
-A -80 80 20 -1799 -1 0 1 0 N -100 80 -60 80
-A -40 -80 20 1 1799 0 1 0 N -20 -80 -60 -80
-A -40 80 20 -1799 -1 0 1 0 N -60 80 -20 80
-A 0 -80 20 1 1799 0 1 0 N 20 -80 -20 -80
-A 0 80 20 -1799 -1 0 1 0 N -20 80 20 80
-A 40 -80 20 1 1799 0 1 0 N 60 -80 20 -80
-A 40 80 20 -1799 -1 0 1 0 N 20 80 60 80
-A 80 -80 20 1 1799 0 1 0 N 100 -80 60 -80
-A 80 80 20 -1799 -1 0 1 0 N 60 80 100 80
-C -120 -50 10 0 1 0 F
-C -120 60 10 0 1 0 F
-P 2 0 1 0 -100 -80 -100 -100 N
-P 2 0 1 0 -100 20 100 20 N
-P 2 0 1 0 -100 80 -100 100 N
-P 2 0 1 0 100 -80 100 -100 N
-P 2 0 1 0 100 -20 -100 -20 N
-P 2 0 1 0 100 100 100 80 N
-X 1 1 -200 100 100 R 50 50 1 1 P
-X 2 2 200 100 100 L 50 50 1 1 P
-X 3 3 -200 -100 100 R 50 50 1 1 P
-X 4 4 200 -100 100 L 50 50 1 1 P
+A 0 -60 20 -899 899 0 1 0 N 0 -80 0 -40
+A 0 -20 20 -899 899 0 1 0 N 0 -40 0 0
+A 0 20 20 -899 899 0 1 0 N 0 0 0 40
+A 0 60 20 -899 899 0 1 0 N 0 40 0 80
+P 2 0 1 0 30 80 30 -80 N
+P 2 0 1 0 40 -80 40 80 N
+X ~ 1 0 100 20 D 50 50 1 1 P
+X ~ 2 0 -100 20 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
@@ -172,7 +195,7 @@ $FPLIST
  Choke_*
  *Coil*
  Inductor_*
- *:L_*
+ L_*
 $ENDFPLIST
 DRAW
 A 0 -60 20 -899 899 0 1 0 N 0 -80 0 -40
@@ -192,7 +215,7 @@ F1 "Device:R" 0 0 50 V V C CNN
 F2 "" -70 0 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
- *:R_*
+ R_*
 $ENDFPLIST
 DRAW
 S -40 -100 40 100 0 1 10 N
@@ -209,7 +232,7 @@ F1 "Device:R_Small" 30 -40 50 H V L CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
- *:R_*
+ R_*
 $ENDFPLIST
 DRAW
 S -30 70 30 -70 0 1 8 N
@@ -343,34 +366,11 @@ X PD2 9 450 -500 100 L 31 31 1 1 I
 ENDDRAW
 ENDDEF
 #
-# Mcc18-rescue:INA211_DCK_6-INA211BIDCKR-Mcc18-rescue
+# Mcc18-rescue:INA240-ina240_soic8-Mcc18-rescue-Mcc18-rescue-Mcc18-rescue-Mcc18-rescue-Mcc18-rescue
 #
-DEF Mcc18-rescue:INA211_DCK_6-INA211BIDCKR-Mcc18-rescue U 0 10 Y Y 1 F N
-F0 "U" 200 250 60 H V C CNN
-F1 "Mcc18-rescue:INA211_DCK_6-INA211BIDCKR-Mcc18-rescue" 200 150 60 H V C CNN
-F2 "DCK6" 200 90 60 H I C CNN
-F3 "" -300 850 60 H V C CNN
-$FPLIST
- DCK6
- DCK6-M
- DCK6-L
-$ENDFPLIST
-DRAW
-S 0 0 350 -300 0 1 0 f
-X REF 1 -150 -50 150 R 39 39 1 0 W
-X GND 2 -150 -150 150 R 39 39 1 0 W
-X V+ 3 -150 -250 150 R 39 39 1 0 W
-X IN+ 4 500 -250 150 L 39 39 1 0 I
-X IN- 5 500 -150 150 L 39 39 1 0 I
-X OUT 6 500 -50 150 L 39 39 1 0 O
-ENDDRAW
-ENDDEF
-#
-# Mcc18-rescue:INA240-ina240_soic8-Mcc18-rescue
-#
-DEF Mcc18-rescue:INA240-ina240_soic8-Mcc18-rescue U 0 10 Y Y 1 F N
+DEF Mcc18-rescue:INA240-ina240_soic8-Mcc18-rescue-Mcc18-rescue-Mcc18-rescue-Mcc18-rescue-Mcc18-rescue U 0 10 Y Y 1 F N
 F0 "U" 150 250 60 H V C CNN
-F1 "Mcc18-rescue:INA240-ina240_soic8-Mcc18-rescue" 150 150 60 H V C CNN
+F1 "Mcc18-rescue:INA240-ina240_soic8-Mcc18-rescue-Mcc18-rescue-Mcc18-rescue-Mcc18-rescue-Mcc18-rescue" 150 150 60 H V C CNN
 F2 "DCK6" 150 90 60 H I C CNN
 F3 "" -950 800 60 H V C CNN
 $FPLIST
@@ -404,32 +404,30 @@ P 13 0 1 10 -13 50 -13 150 12 150 12 50 37 50 37 150 62 150 62 50 87 50 87 150 1
 ENDDRAW
 ENDDEF
 #
-# Mechanical:Mounting_Hole
+# Mechanical:MountingHole
 #
-DEF Mechanical:Mounting_Hole MK 0 40 Y Y 1 F N
-F0 "MK" 0 200 50 H V C CNN
-F1 "Mechanical:Mounting_Hole" 0 125 50 H V C CNN
+DEF Mechanical:MountingHole MH 0 40 Y Y 1 F N
+F0 "MH" 0 200 50 H V C CNN
+F1 "Mechanical:MountingHole" 0 125 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
- Mounting?Hole*
- Hole*
+ MountingHole*
 $ENDFPLIST
 DRAW
 C 0 0 50 0 1 50 N
 ENDDRAW
 ENDDEF
 #
-# Mechanical:Mounting_Hole_PAD
+# Mechanical:MountingHole_Pad
 #
-DEF Mechanical:Mounting_Hole_PAD MK 0 40 N N 1 F N
-F0 "MK" 0 250 50 H V C CNN
-F1 "Mechanical:Mounting_Hole_PAD" 0 175 50 H V C CNN
+DEF Mechanical:MountingHole_Pad MH 0 40 N N 1 F N
+F0 "MH" 0 250 50 H V C CNN
+F1 "Mechanical:MountingHole_Pad" 0 175 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
- Mounting?Hole*
- Hole*
+ MountingHole*Pad*
 $ENDFPLIST
 DRAW
 C 0 50 50 0 1 50 N
@@ -463,7 +461,7 @@ F0 "Q" 250 75 50 H V L CNN
 F1 "Transistor_FET:IRF540N" 250 0 50 H V L CNN
 F2 "Package_TO_SOT_THT:TO-220-3_Vertical" 250 -75 50 H I L CIN
 F3 "" 0 0 50 H I L CNN
-ALIAS IRLZ44N IRLIZ44N IRLZ34N IRF3205 IRF540N
+ALIAS IRF3205 IRF540N IRF740 IRLB8721PBF IRLZ34N IRLZ44N
 $FPLIST
  TO?220*
 $ENDFPLIST
@@ -471,6 +469,7 @@ DRAW
 C 65 0 111 0 1 10 N
 C 100 -70 11 0 1 0 F
 C 100 70 11 0 1 0 F
+P 2 0 1 0 10 0 -100 0 N
 P 2 0 1 0 30 -70 100 -70 N
 P 2 0 1 10 30 -50 30 -90 N
 P 2 0 1 0 30 0 100 0 N
@@ -485,7 +484,7 @@ P 4 0 1 0 40 0 80 15 80 -15 40 0 F
 P 4 0 1 0 100 -70 130 -70 130 70 100 70 N
 P 4 0 1 0 110 20 115 15 145 15 150 10 N
 P 4 0 1 0 130 15 115 -10 145 -10 130 15 N
-X G 1 -200 0 210 R 50 50 1 1 I
+X G 1 -200 0 100 R 50 50 1 1 I
 X D 2 100 200 100 D 50 50 1 1 P
 X S 3 100 -200 100 U 50 50 1 1 P
 ENDDRAW
