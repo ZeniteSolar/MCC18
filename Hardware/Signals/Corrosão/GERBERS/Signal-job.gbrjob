@@ -1,0 +1,74 @@
+{
+  "Header":
+  {
+    "GenerationSoftware":
+    {
+      "Vendor":      "KiCad",
+      "Application": "Pcbnew",
+      "Version":     "(5.0.0)"
+    },
+    "CreationDate":  "2018-09-03T01:16:15-03:00"
+  },
+  "GeneralSpecs":
+  {
+    "ProjectId":
+    {
+      "Name": "Signal",
+      "GUID": "5369676E616C2E6B696361645F706362",
+      "Revision": "rev?"
+    },
+    "Size":
+    {
+      "X": 56.742,
+      "Y": 34.390
+    },
+    "LayerNumber": 2,
+    "BoardThickness":  1.600
+  },
+  "DesignRules":
+  [
+    {
+      "Layers": "Outer",
+      "PadToPad":  0.010,
+      "PadToTrack":  0.010,
+      "TrackToTrack":  0.700,
+      "MinLineWidth":  0.508,
+      "TrackToRegion":  0.700,
+      "RegionToRegion":  0.700
+    }
+  ],
+  "FilesAttributes":
+  [
+    {
+      "Path":  "Signal-F.Cu.gbr",
+      "FileFunction":  "Copper,L1,Top",
+      "FilePolarity":  "Positive"
+    },
+    {
+      "Path":  "Signal-B.Cu.gbr",
+      "FileFunction":  "Copper,L2,Bot",
+      "FilePolarity":  "Positive"
+    },
+    {
+      "Path":  "Signal-Edge.Cuts.gbr",
+      "FileFunction":  "Profile",
+      "FilePolarity":  "Positive"
+    }
+  ],
+  "MaterialStackup":
+  [
+    {
+      "Type":  "Copper",
+      "Notes":  "Layer F.Cu"
+    },
+    {
+      "Type":  "Dielectric",
+      "Material":  "FR4",
+      "Notes":  "Layers L1/L2"
+    },
+    {
+      "Type":  "Copper",
+      "Notes":  "Layer B.Cu"
+    }
+  ]
+}

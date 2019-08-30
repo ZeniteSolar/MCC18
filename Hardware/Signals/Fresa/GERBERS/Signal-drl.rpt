@@ -1,0 +1,24 @@
+Drill report for C:\Users\paola\Desktop\Cosas de ALejo sin pc\Signals\MCC18\Hardware\Shunt_sensor\Signals\Fresa\Signal.kicad_pcb
+Created on 03/09/2018 02:12:39
+
+Copper Layer Stackup:
+    =============================================================
+    L1 :  F.Cu                      front
+    L2 :  B.Cu                      back
+
+
+Drill file 'Signal.drl' contains
+    plated through holes:
+    =============================================================
+    T1  0.60mm  0.024"  (14 holes)
+    T2  1.00mm  0.039"  (17 holes)
+    T3  2.20mm  0.087"  (1 hole)
+
+    Total plated holes count 32
+
+
+Not plated through holes are merged with plated holes
+    unplated through holes:
+    =============================================================
+
+    Total unplated holes count 0

@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name Signal-rescue)(type Legacy)(uri ${KIPRJMOD}/Signal-rescue.lib)(options "")(descr ""))
+  (lib (name INA826AIDR)(type Legacy)(uri "C:/Users/perdo/Desktop/ZENITE/MCC18/Shunt sensor 30_05_18/Signals/Bibliotecas/INA826AIDR.lib")(options "")(descr ""))
+  (lib (name MCC18)(type Legacy)(uri "C:/GitZenite/MCC18/Hardware/Hall sensor/Signals/MCC_bibliotecas/MCC18.lib")(options "")(descr ""))
+)

@@ -1,0 +1,7 @@
+(sym_lib_table
+  (lib (name Mcc18-rescue)(type Legacy)(uri ${KIPRJMOD}/Mcc18-rescue.lib)(options "")(descr ""))
+  (lib (name INA211BIDCKR)(type Legacy)(uri "C:/Users/Aluno/Desktop/Zênite Solar/GitZenite2/MCC18/Hardware/Shunt_sensor/Cuk_converter/KiCad/MCC_bibliotecas/INA211BIDCKR.lib")(options "")(descr ""))
+  (lib (name ina240_soic8)(type Legacy)(uri "C:/Users/Aluno/Desktop/Zênite Solar/GitZenite2/MCC18/Hardware/Shunt_sensor/Cuk_converter/KiCad/MCC_bibliotecas/ina240 soic8.lib")(options "")(descr ""))
+  (lib (name MCC18)(type Legacy)(uri "C:/Users/Aluno/Desktop/Zênite Solar/GitZenite2/MCC18/Hardware/Shunt_sensor/Cuk_converter/KiCad/MCC_bibliotecas/MCC18.lib")(options "")(descr ""))
+  (lib (name ZCS)(type Legacy)(uri "C:/Users/Aluno/Desktop/Zênite Solar/GitZenite2/MCC18/Hardware/Shunt_sensor/Cuk_converter/KiCad/MCC_bibliotecas/ZCS.lib")(options "")(descr ""))
+)

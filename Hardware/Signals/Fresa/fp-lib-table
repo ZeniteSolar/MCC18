@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name Bibliotecas)(type KiCad)(uri ${KIPRJMOD}/Bibliotecas.pretty)(options "")(descr ""))
+  (lib (name MCCplaca)(type KiCad)(uri "C:/Users/paola/Desktop/Cosas de ALejo sin pc/Signals/MCC18/Hardware/Shunt_sensor/Cuk_converter/KiCad/MCC_bibliotecas/MCCplaca.pretty")(options "")(descr ""))
+)
