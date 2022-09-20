@@ -3,14 +3,12 @@ Solar panel MPPT, cuk converter, with microcontroller
 
 
 # Procedimento de testes - MCC18
-<<<<<<< HEAD
-## Importante: 
-=======
 
  - [Inspeção](#inspeção)
  - [Disgnostico Inicial](#diagnóstico-inicial)
+ - [Diagnostico Preventivo](#diagnostico-preventivo)
  - [Teste Geral](#teste-geral)
-    - [Entrada e saida de potencia](#entrada-e-saída-da-potência)
+    - [Entrada e saída de potencia](#entrada-e-saída-da-potência)
     - [Funcional](#funcional)
  - [Testes Individuais](#testes-individuais)
     - [Signals](#signals)
@@ -20,7 +18,7 @@ Solar panel MPPT, cuk converter, with microcontroller
     - [Reparos Obrigatorios](#reparos-obrigatórios)
     - [Verificando funcionamento](#verificando-se-está-funcionando)
     - [Correção de falhas](#correção-de-falhas)
-        - [Se não houver sinal retangular na saida](#se-não-houver-sinal-retangular-na-saida)
+        - [Se não houver sinal retangular na saída](#se-não-houver-sinal-retangular-na-saída)
         - [Se não houver +15V e -5V](#se-não-houver-15v-e--5v)
         - [Se não houver tensão em um dos barramentos de +15V ou -5V](#se-não-houver-tensão-em-um-dos-barramentos-de-15v-ou--5v)
         - [Se tem tensão no barramento, mas não tem sinal em gate e source](#se-tem-tensão-no-barramento-mas-não-tem-sinal-em-gate-e-source)
@@ -76,11 +74,29 @@ Multímetro: entre P+ e B-, observar a carga do capacitor de acoplamento, um cur
 
 Multímetro: verificar se gate-source ou gate-drain não estão em curto.
 
-<<<<<<< HEAD
-![](images/image2.png)
-=======
 ![](images/mosfet.png)
->>>>>>> 3f267c3 (DOC: Add test procedures and repair tutorial)
+
+## DIAGNOSTICO PREVENTIVO
+
+IMPORTANTE, este diagnostico SOMENTE pode ser feito quando se tem certeza de que não houve um mal funcionamento do modulo, por exemplo o modulo ficou em repouso por um tempo e quer verificar o funcionamento. Este teste estima que o modulo não tem nenhuma falha destrutiva, se houver duvidas é recomendável fazer o diagnostico inicial e teste geral antes!!!.
+
+ATENÇÃO! Nunca efetuar o teste sem resistor de carga entre B+ e B- se em algum momento houver a desconexão do mesmo pode danificar o modulo!
+
+ - Ligar uma Fonte CAN a uma fonte de laboratorio com a tensão entre 18 e 30V, limitada em 0.05A e verificar o consumo, se a fonte limitar em corrente examinar o MCC_CAN_Shield está queimado, se não limitar em corrente esperar uns segundos e os leds deveriam piscar alternadamente (talvez passado um tempo um led fique fixo e outro desligado, não tem problema), se não o MCC_CAN_Shield está com problema.
+ 
+ **(Sempre que for ligar uma placa no MCC desligar a fonte CAN (Se estiver usando uma fonte de laboratorio não desligue ela, desconecte o fio que alimenta o circuito é mais seguro))**
+
+ - Com o MCC_CAN_Shield funcionando conecta-lo no MCC e aumentar o limite de corrente da fonte para 0.10A.
+ - Conectar o driver e verificar o consumo, se limitar em corrente o driver está queimado, se não prosseguir.
+ - Conectar a placa dos sensores, se limitar em corrente a placa está queimada, se não prosseguir.
+ - **PASSO MUITO IMPORTANTE** Conectar o resistor de carga (valor máximo: 25R, recomendável: 20R, mínimo: 1R) entre B+ e B-
+ - Ligar outra fonte (deve estar isolada) com a tensão em 0V e a corrente limitada a 0.05A entre +P e -P.
+ - Medir a tensão de saída
+ - Fazer uma rampa na fonte conectada em P+ e P- de 0V até 7V e de 0.05A até 1A (fazer devagar), enquanto faz a rampa a tensão de saída deveria aumentar se não aumentar e a fonte sempre ficar limitando em corrente, tem problema na parte de potencia, se a tensão de saída não aumentar e não houver consumo ou o driver ou a parte de potencia não funcionam
+ - Se houve tensão na saída, a fonte de P+ e P- deveria ficar oscilando entre limite de corrente e limite de tensão e os LEDs da placa de controle deveriam estar alternando. Se não for o caso, desconectar o cabo RJ45 e conectar novamente, se mesmo assim depois de uns 30 segundos não ficar oscilando entre o limite de corrente e o limite de tensão, provavelmente algum sensor deve estar queimado.
+ - Para diagnosticar o sensor conectar um Arduíno nos pinos de dados e na serial verificar se os valores medidos condizem com os que aparecem na fonte de P+ e P-.
+
+ 
 
 ## TESTE GERAL
 Primeiro teste a ser realizado após limpeza e inspeção visual. Esse teste garante que as chaves e capacitores de potência estejam sem fuga de corrente para os níveis de tensão de trabalho nominal. Caso haja fuga de corrente, pode-se optar por aumentar o nível da corrente e localizar a fuga pela elevação de temperatura. 
@@ -279,7 +295,7 @@ https://drive.google.com/drive/u/0/folders/0B_EOV_z-bdXUR3FXRHJyZm9FUkE?resource
 =======
 #### Correção de falhas:
 - Comportamentos:
-#### Se não houver sinal retangular na saida
+#### Se não houver sinal retangular na saída
  - Verificar se tem +15V com a ponteira comum do multímetro no pino 4 do indutor e a vermelha no catodo do D300(localizado na proxima imagem)
  - Verificar se tem -5V com a ponteira comum do multímetro no pino 4 do indutor e a vermelha no anodo do D302(localizado na próxima imagem)
     
